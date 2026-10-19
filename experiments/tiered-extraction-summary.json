@@ -1,0 +1,72 @@
+{
+  "run": "artifacts/local/tiered-extraction/2026-10-15T06-59-49-626Z-0e1efd37",
+  "diagnosticOnly": true,
+  "summary": {
+    "diagnosticOnly": true,
+    "repetitions": 3,
+    "attempts": 18,
+    "allGatewayScopeAndUsageMatched": true,
+    "limitation": "Source/schema/restore probe only; extraction completeness and truth require independent evaluation"
+  },
+  "evaluation": {
+    "diagnosticOnly": true,
+    "runCompleted": true,
+    "expected": 6,
+    "matched": 6,
+    "missing": 0,
+    "unsupported": 0,
+    "missingSnapshots": 0,
+    "passed": true,
+    "rows": [
+      {
+        "repetition": 1,
+        "agentId": "rowan",
+        "expected": 1,
+        "matched": 1,
+        "unsupported": 0
+      },
+      {
+        "repetition": 1,
+        "agentId": "iris",
+        "expected": 1,
+        "matched": 1,
+        "unsupported": 0
+      },
+      {
+        "repetition": 2,
+        "agentId": "rowan",
+        "expected": 1,
+        "matched": 1,
+        "unsupported": 0
+      },
+      {
+        "repetition": 2,
+        "agentId": "iris",
+        "expected": 1,
+        "matched": 1,
+        "unsupported": 0
+      },
+      {
+        "repetition": 3,
+        "agentId": "rowan",
+        "expected": 1,
+        "matched": 1,
+        "unsupported": 0
+      },
+      {
+        "repetition": 3,
+        "agentId": "iris",
+        "expected": 1,
+        "matched": 1,
+        "unsupported": 0
+      }
+    ],
+    "limitation": "Exact accepted-delivery tuples on a development fixture only; no general fact-quality or online acceptance claim",
+    "fixtureSha256": "c790798f7a321843c5574de5ad31c15f596bcb475464d68dd68b6d0573ac74b8",
+    "analysisScriptSha256": "4eca2bf10a779e2418a4b9c332c93428d70d7f5a66c9fbe0b504335962ad58b8"
+  },
+  "generationInputTokens": 4038,
+  "generationOutputTokens": 1512,
+  "embeddingInputTokens": 1020,
+  "callsSha256": "e133296b28d4703ff0644f9bfce70f46f7789967cd20f2392f0b822ff5645d06"
+}

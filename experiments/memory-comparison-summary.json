@@ -1,0 +1,1455 @@
+{
+  "measuredAt": "2026-10-15T05:50:25.775Z",
+  "run": "artifacts/local/memory-comparison/2026-10-15T05-40-24-861Z-19941229",
+  "diagnosticOnly": true,
+  "status": "completed",
+  "distinctQuestions": 10,
+  "summary": {
+    "diagnosticOnly": true,
+    "comparisonScope": "retrieval-only; maintenance rebuilt per repetition and shared between query variants",
+    "conversationsPerRepetition": 3,
+    "distinctQuestions": 10,
+    "repetitions": 3,
+    "expectedAnswers": 90,
+    "observedAnswers": 90,
+    "attempts": 234,
+    "allGatewayScopeAndUsageMatched": true,
+    "byVariant": {
+      "baseline": {
+        "observedAnswers": 30,
+        "inputTokens": 13374,
+        "budgetExclusions": 0
+      },
+      "budget_512": {
+        "observedAnswers": 30,
+        "inputTokens": 13374,
+        "budgetExclusions": 0
+      },
+      "budget_128_stress": {
+        "observedAnswers": 30,
+        "inputTokens": 5424,
+        "budgetExclusions": 60
+      }
+    }
+  },
+  "evaluation": {
+    "diagnosticOnly": true,
+    "runCompleted": true,
+    "distinctQuestions": 10,
+    "repetitions": 3,
+    "byVariant": {
+      "baseline": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 27,
+        "accuracy": 0.9,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 18,
+          "assessed": 18,
+          "confirmed": 3,
+          "unassessed": 0,
+          "rateAmongAssessed": 0.16666666666666666,
+          "lowerBoundRate": 0.16666666666666666
+        },
+        "unanswerable": {
+          "expected": 6,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "fact": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "update": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 3,
+            "accuracy": 0.5,
+            "missing": 0
+          },
+          "relationship": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "commitment": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          },
+          {
+            "repetition": 2,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          },
+          {
+            "repetition": 3,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          }
+        ]
+      },
+      "budget_512": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 27,
+        "accuracy": 0.9,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 18,
+          "assessed": 18,
+          "confirmed": 3,
+          "unassessed": 0,
+          "rateAmongAssessed": 0.16666666666666666,
+          "lowerBoundRate": 0.16666666666666666
+        },
+        "unanswerable": {
+          "expected": 6,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "fact": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "update": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 3,
+            "accuracy": 0.5,
+            "missing": 0
+          },
+          "relationship": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "commitment": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          },
+          {
+            "repetition": 2,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          },
+          {
+            "repetition": 3,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          }
+        ]
+      },
+      "budget_128_stress": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 12,
+        "accuracy": 0.4,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 18,
+          "assessed": 18,
+          "confirmed": 0,
+          "unassessed": 0,
+          "rateAmongAssessed": 0,
+          "lowerBoundRate": 0
+        },
+        "unanswerable": {
+          "expected": 6,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "fact": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 0
+          },
+          "update": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 0
+          },
+          "relationship": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "commitment": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 10,
+            "observed": 10,
+            "correct": 4,
+            "accuracy": 0.4,
+            "missing": 0
+          },
+          {
+            "repetition": 2,
+            "expected": 10,
+            "observed": 10,
+            "correct": 4,
+            "accuracy": 0.4,
+            "missing": 0
+          },
+          {
+            "repetition": 3,
+            "expected": 10,
+            "observed": 10,
+            "correct": 4,
+            "accuracy": 0.4,
+            "missing": 0
+          }
+        ]
+      }
+    },
+    "rows": [
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": false,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_128_stress",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      }
+    ],
+    "complete": true,
+    "formalQualityAccepted": false,
+    "limitation": "Development QA; contradictions only for predeclared exact counteranswers, with coverage. No human review or actual task-completion gate.",
+    "answersSha256": "301ebb75bfbfa06e67049e05c6f05db6e1fb4448eb262fdf132828c8936ce006"
+  },
+  "sharedMaintenance": {
+    "attempts": 54,
+    "failures": 0,
+    "unknownUsageAttempts": 0,
+    "generation": {
+      "attempts": 36,
+      "inputTokens": 6333,
+      "outputTokens": 1581
+    },
+    "embedding": {
+      "attempts": 18,
+      "inputTokens": 1836,
+      "outputTokens": null,
+      "outputUsageReason": "no embedding completion-token field"
+    }
+  },
+  "queryCostsByVariant": {
+    "baseline": {
+      "attempts": 60,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "generation": {
+        "attempts": 30,
+        "inputTokens": 13374,
+        "outputTokens": 222
+      },
+      "embedding": {
+        "attempts": 30,
+        "inputTokens": 492,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "budget_512": {
+      "attempts": 60,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "generation": {
+        "attempts": 30,
+        "inputTokens": 13374,
+        "outputTokens": 222
+      },
+      "embedding": {
+        "attempts": 30,
+        "inputTokens": 492,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "budget_128_stress": {
+      "attempts": 60,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "generation": {
+        "attempts": 30,
+        "inputTokens": 5424,
+        "outputTokens": 183
+      },
+      "embedding": {
+        "attempts": 30,
+        "inputTokens": 492,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "queryInputReductionRate": {
+    "baseline": 0,
+    "budget_512": 0,
+    "budget_128_stress": 0.5944369672498878
+  },
+  "callsSha256": "14d1ba5df3fa43228417a1b4aeda9c616cd0a4ad47b2dd44ef0a1d9ad9ce5cbe",
+  "evaluationSha256": "5ecd3d97da144a513bae5c88dbbf17c5258bc786d2fb459acd2b2d0e5e10abfe",
+  "analysisScriptSha256": "df6009805a988175a3199e6bde256e49d627338b46627805b4cc96f79ac0608a",
+  "limitations": [
+    "Shared maintenance; retrieval-only comparison, not independent end-to-end costs",
+    "Distinct question IDs share a history; not independent statistical samples",
+    "Synthetic development dataset; see config diagnostic notes",
+    "No human review, full quality gates, Convex parity, or tiered-memory results"
+  ]
+}

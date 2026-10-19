@@ -1,0 +1,150 @@
+{"type": "observation", "id": "acceptance-fact-01-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-15，林晨确认咖啡店当天的开门时间是08:00。", "sequence": 0}
+{"type": "observation", "id": "acceptance-fact-02-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-16，周宁确认图书馆当天的开门时间是09:00。", "sequence": 1}
+{"type": "observation", "id": "acceptance-fact-03-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-17，许岚确认公园当天的开门时间是10:00。", "sequence": 2}
+{"type": "observation", "id": "acceptance-fact-04-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-18，陈禾确认面包店当天的开门时间是11:00。", "sequence": 3}
+{"type": "observation", "id": "acceptance-fact-05-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-19，李悦确认社区中心当天的开门时间是12:00。", "sequence": 4}
+{"type": "observation", "id": "acceptance-fact-06-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-20，吴悠确认花店当天的开门时间是13:00。", "sequence": 5}
+{"type": "observation", "id": "acceptance-fact-07-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-21，郑安确认书店当天的开门时间是14:00。", "sequence": 6}
+{"type": "observation", "id": "acceptance-fact-08-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-22，王晴确认车站当天的开门时间是15:00。", "sequence": 7}
+{"type": "observation", "id": "acceptance-fact-09-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-23，孙川确认诊所当天的开门时间是16:00。", "sequence": 8}
+{"type": "observation", "id": "acceptance-fact-10-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-24，赵露确认广场当天的开门时间是17:00。", "sequence": 9}
+{"type": "observation", "id": "acceptance-update-01-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-15 08:00，林晨原计划09:00到咖啡店。", "sequence": 10}
+{"type": "observation", "id": "acceptance-update-01-e2", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-15 08:30，林晨明确取消原时间，改为当天13:30到咖啡店。", "sequence": 11}
+{"type": "observation", "id": "acceptance-update-02-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-16 08:00，周宁原计划09:00到图书馆。", "sequence": 12}
+{"type": "observation", "id": "acceptance-update-02-e2", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-16 08:30，周宁明确取消原时间，改为当天14:30到图书馆。", "sequence": 13}
+{"type": "observation", "id": "acceptance-update-03-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-17 08:00，许岚原计划09:00到公园。", "sequence": 14}
+{"type": "observation", "id": "acceptance-update-03-e2", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-17 08:30，许岚明确取消原时间，改为当天15:30到公园。", "sequence": 15}
+{"type": "observation", "id": "acceptance-update-04-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-18 08:00，陈禾原计划09:00到面包店。", "sequence": 16}
+{"type": "observation", "id": "acceptance-update-04-e2", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-18 08:30，陈禾明确取消原时间，改为当天16:30到面包店。", "sequence": 17}
+{"type": "observation", "id": "acceptance-update-05-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-19 08:00，李悦原计划09:00到社区中心。", "sequence": 18}
+{"type": "observation", "id": "acceptance-update-05-e2", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-19 08:30，李悦明确取消原时间，改为当天17:30到社区中心。", "sequence": 19}
+{"type": "observation", "id": "acceptance-update-06-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-20 08:00，吴悠原计划09:00到花店。", "sequence": 20}
+{"type": "observation", "id": "acceptance-update-06-e2", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-20 08:30，吴悠明确取消原时间，改为当天18:30到花店。", "sequence": 21}
+{"type": "observation", "id": "acceptance-update-07-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-21 08:00，郑安原计划09:00到书店。", "sequence": 22}
+{"type": "observation", "id": "acceptance-update-07-e2", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-21 08:30，郑安明确取消原时间，改为当天19:30到书店。", "sequence": 23}
+{"type": "observation", "id": "acceptance-update-08-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-22 08:00，王晴原计划09:00到车站。", "sequence": 24}
+{"type": "observation", "id": "acceptance-update-08-e2", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-22 08:30，王晴明确取消原时间，改为当天20:30到车站。", "sequence": 25}
+{"type": "observation", "id": "acceptance-update-09-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-23 08:00，孙川原计划09:00到诊所。", "sequence": 26}
+{"type": "observation", "id": "acceptance-update-09-e2", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-23 08:30，孙川明确取消原时间，改为当天21:30到诊所。", "sequence": 27}
+{"type": "observation", "id": "acceptance-update-10-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-24 08:00，赵露原计划09:00到广场。", "sequence": 28}
+{"type": "observation", "id": "acceptance-update-10-e2", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-24 08:30，赵露明确取消原时间，改为当天22:30到广场。", "sequence": 29}
+{"type": "observation", "id": "acceptance-relationship-01-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "林晨在咖啡店工作。林晨明确介绍：陈禾是我的姐姐；吴悠是我的同事。", "sequence": 30}
+{"type": "observation", "id": "acceptance-relationship-02-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "周宁在图书馆工作。周宁明确介绍：李悦是我的姐姐；郑安是我的同事。", "sequence": 31}
+{"type": "observation", "id": "acceptance-relationship-03-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "许岚在公园工作。许岚明确介绍：吴悠是我的姐姐；王晴是我的同事。", "sequence": 32}
+{"type": "observation", "id": "acceptance-relationship-04-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "陈禾在面包店工作。陈禾明确介绍：郑安是我的姐姐；孙川是我的同事。", "sequence": 33}
+{"type": "observation", "id": "acceptance-relationship-05-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "李悦在社区中心工作。李悦明确介绍：王晴是我的姐姐；赵露是我的同事。", "sequence": 34}
+{"type": "observation", "id": "acceptance-relationship-06-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "吴悠在花店工作。吴悠明确介绍：孙川是我的姐姐；林晨是我的同事。", "sequence": 35}
+{"type": "observation", "id": "acceptance-relationship-07-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "郑安在书店工作。郑安明确介绍：赵露是我的姐姐；周宁是我的同事。", "sequence": 36}
+{"type": "observation", "id": "acceptance-relationship-08-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "王晴在车站工作。王晴明确介绍：林晨是我的姐姐；许岚是我的同事。", "sequence": 37}
+{"type": "observation", "id": "acceptance-relationship-09-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "孙川在诊所工作。孙川明确介绍：周宁是我的姐姐；陈禾是我的同事。", "sequence": 38}
+{"type": "observation", "id": "acceptance-relationship-10-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "赵露在广场工作。赵露明确介绍：许岚是我的姐姐；李悦是我的同事。", "sequence": 39}
+{"type": "observation", "id": "acceptance-commitment-01-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-20，林晨明确接受了约定：在2026-11-01把借来的书还给周宁。另外，林晨计划2026-11-20去咖啡店。", "sequence": 40}
+{"type": "observation", "id": "acceptance-commitment-02-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-20，周宁明确接受了约定：在2026-11-02把借来的书还给许岚。另外，周宁计划2026-11-20去图书馆。", "sequence": 41}
+{"type": "observation", "id": "acceptance-commitment-03-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-20，许岚明确接受了约定：在2026-11-03把借来的书还给陈禾。另外，许岚计划2026-11-20去公园。", "sequence": 42}
+{"type": "observation", "id": "acceptance-commitment-04-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-20，陈禾明确接受了约定：在2026-11-04把借来的书还给李悦。另外，陈禾计划2026-11-20去面包店。", "sequence": 43}
+{"type": "observation", "id": "acceptance-commitment-05-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-20，李悦明确接受了约定：在2026-11-05把借来的书还给吴悠。另外，李悦计划2026-11-20去社区中心。", "sequence": 44}
+{"type": "observation", "id": "acceptance-commitment-06-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "2026-10-20，吴悠明确接受了约定：在2026-11-06把借来的书还给郑安。另外，吴悠计划2026-11-20去花店。", "sequence": 45}
+{"type": "observation", "id": "acceptance-commitment-07-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "2026-10-20，郑安明确接受了约定：在2026-11-07把借来的书还给王晴。另外，郑安计划2026-11-20去书店。", "sequence": 46}
+{"type": "observation", "id": "acceptance-commitment-08-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "2026-10-20，王晴明确接受了约定：在2026-11-08把借来的书还给孙川。另外，王晴计划2026-11-20去车站。", "sequence": 47}
+{"type": "observation", "id": "acceptance-commitment-09-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "2026-10-20，孙川明确接受了约定：在2026-11-09把借来的书还给赵露。另外，孙川计划2026-11-20去诊所。", "sequence": 48}
+{"type": "observation", "id": "acceptance-commitment-10-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "2026-10-20，赵露明确接受了约定：在2026-11-10把借来的书还给林晨。另外，赵露计划2026-11-20去广场。", "sequence": 49}
+{"type": "observation", "id": "acceptance-unanswerable-01-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "林晨今天去了咖啡店，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 50}
+{"type": "observation", "id": "acceptance-unanswerable-02-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "周宁今天去了图书馆，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 51}
+{"type": "observation", "id": "acceptance-unanswerable-03-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "许岚今天去了公园，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 52}
+{"type": "observation", "id": "acceptance-unanswerable-04-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "陈禾今天去了面包店，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 53}
+{"type": "observation", "id": "acceptance-unanswerable-05-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "李悦今天去了社区中心，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 54}
+{"type": "observation", "id": "acceptance-unanswerable-06-e1", "worldId": "fixed-world", "agentId": "a:0", "text": "吴悠今天去了花店，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 55}
+{"type": "observation", "id": "acceptance-unanswerable-07-e1", "worldId": "fixed-world", "agentId": "a:1", "text": "郑安今天去了书店，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 56}
+{"type": "observation", "id": "acceptance-unanswerable-08-e1", "worldId": "fixed-world", "agentId": "a:2", "text": "王晴今天去了车站，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 57}
+{"type": "observation", "id": "acceptance-unanswerable-09-e1", "worldId": "fixed-world", "agentId": "a:3", "text": "孙川今天去了诊所，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 58}
+{"type": "observation", "id": "acceptance-unanswerable-10-e1", "worldId": "fixed-world", "agentId": "a:4", "text": "赵露今天去了广场，购买了一本书。记录没有描述其家庭成员或宠物。", "sequence": 59}
+{"type": "observation", "id": "filler-0000", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号0：广场今天有一片落叶，未发生其他重要事件。", "sequence": 60}
+{"type": "observation", "id": "filler-0001", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号1：广场今天有一片落叶，未发生其他重要事件。", "sequence": 61}
+{"type": "observation", "id": "filler-0002", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号2：广场今天有一片落叶，未发生其他重要事件。", "sequence": 62}
+{"type": "observation", "id": "filler-0003", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号3：广场今天有一片落叶，未发生其他重要事件。", "sequence": 63}
+{"type": "observation", "id": "filler-0004", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号4：广场今天有一片落叶，未发生其他重要事件。", "sequence": 64}
+{"type": "observation", "id": "filler-0005", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号5：广场今天有一片落叶，未发生其他重要事件。", "sequence": 65}
+{"type": "observation", "id": "filler-0006", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号6：广场今天有一片落叶，未发生其他重要事件。", "sequence": 66}
+{"type": "observation", "id": "filler-0007", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号7：广场今天有一片落叶，未发生其他重要事件。", "sequence": 67}
+{"type": "observation", "id": "filler-0008", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号8：广场今天有一片落叶，未发生其他重要事件。", "sequence": 68}
+{"type": "observation", "id": "filler-0009", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号9：广场今天有一片落叶，未发生其他重要事件。", "sequence": 69}
+{"type": "observation", "id": "filler-0010", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号10：广场今天有一片落叶，未发生其他重要事件。", "sequence": 70}
+{"type": "observation", "id": "filler-0011", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号11：广场今天有一片落叶，未发生其他重要事件。", "sequence": 71}
+{"type": "observation", "id": "filler-0012", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号12：广场今天有一片落叶，未发生其他重要事件。", "sequence": 72}
+{"type": "observation", "id": "filler-0013", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号13：广场今天有一片落叶，未发生其他重要事件。", "sequence": 73}
+{"type": "observation", "id": "filler-0014", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号14：广场今天有一片落叶，未发生其他重要事件。", "sequence": 74}
+{"type": "observation", "id": "filler-0015", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号15：广场今天有一片落叶，未发生其他重要事件。", "sequence": 75}
+{"type": "observation", "id": "filler-0016", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号16：广场今天有一片落叶，未发生其他重要事件。", "sequence": 76}
+{"type": "observation", "id": "filler-0017", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号17：广场今天有一片落叶，未发生其他重要事件。", "sequence": 77}
+{"type": "observation", "id": "filler-0018", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号18：广场今天有一片落叶，未发生其他重要事件。", "sequence": 78}
+{"type": "observation", "id": "filler-0019", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号19：广场今天有一片落叶，未发生其他重要事件。", "sequence": 79}
+{"type": "observation", "id": "filler-0020", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号20：广场今天有一片落叶，未发生其他重要事件。", "sequence": 80}
+{"type": "observation", "id": "filler-0021", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号21：广场今天有一片落叶，未发生其他重要事件。", "sequence": 81}
+{"type": "observation", "id": "filler-0022", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号22：广场今天有一片落叶，未发生其他重要事件。", "sequence": 82}
+{"type": "observation", "id": "filler-0023", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号23：广场今天有一片落叶，未发生其他重要事件。", "sequence": 83}
+{"type": "observation", "id": "filler-0024", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号24：广场今天有一片落叶，未发生其他重要事件。", "sequence": 84}
+{"type": "observation", "id": "filler-0025", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号25：广场今天有一片落叶，未发生其他重要事件。", "sequence": 85}
+{"type": "observation", "id": "filler-0026", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号26：广场今天有一片落叶，未发生其他重要事件。", "sequence": 86}
+{"type": "observation", "id": "filler-0027", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号27：广场今天有一片落叶，未发生其他重要事件。", "sequence": 87}
+{"type": "observation", "id": "filler-0028", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号28：广场今天有一片落叶，未发生其他重要事件。", "sequence": 88}
+{"type": "observation", "id": "filler-0029", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号29：广场今天有一片落叶，未发生其他重要事件。", "sequence": 89}
+{"type": "observation", "id": "filler-0030", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号30：广场今天有一片落叶，未发生其他重要事件。", "sequence": 90}
+{"type": "observation", "id": "filler-0031", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号31：广场今天有一片落叶，未发生其他重要事件。", "sequence": 91}
+{"type": "observation", "id": "filler-0032", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号32：广场今天有一片落叶，未发生其他重要事件。", "sequence": 92}
+{"type": "observation", "id": "filler-0033", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号33：广场今天有一片落叶，未发生其他重要事件。", "sequence": 93}
+{"type": "observation", "id": "filler-0034", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号34：广场今天有一片落叶，未发生其他重要事件。", "sequence": 94}
+{"type": "observation", "id": "filler-0035", "worldId": "fixed-world", "agentId": "a:0", "text": "观察编号35：广场今天有一片落叶，未发生其他重要事件。", "sequence": 95}
+{"type": "observation", "id": "filler-0036", "worldId": "fixed-world", "agentId": "a:1", "text": "观察编号36：广场今天有一片落叶，未发生其他重要事件。", "sequence": 96}
+{"type": "observation", "id": "filler-0037", "worldId": "fixed-world", "agentId": "a:2", "text": "观察编号37：广场今天有一片落叶，未发生其他重要事件。", "sequence": 97}
+{"type": "observation", "id": "filler-0038", "worldId": "fixed-world", "agentId": "a:3", "text": "观察编号38：广场今天有一片落叶，未发生其他重要事件。", "sequence": 98}
+{"type": "observation", "id": "filler-0039", "worldId": "fixed-world", "agentId": "a:4", "text": "观察编号39：广场今天有一片落叶，未发生其他重要事件。", "sequence": 99}
+{"type": "query", "id": "acceptance-fact-01", "worldId": "fixed-world", "agentId": "a:0", "text": "当天咖啡店几点开门？", "category": "fact", "sequence": 100}
+{"type": "query", "id": "acceptance-fact-02", "worldId": "fixed-world", "agentId": "a:1", "text": "当天图书馆几点开门？", "category": "fact", "sequence": 101}
+{"type": "query", "id": "acceptance-fact-03", "worldId": "fixed-world", "agentId": "a:2", "text": "当天公园几点开门？", "category": "fact", "sequence": 102}
+{"type": "query", "id": "acceptance-fact-04", "worldId": "fixed-world", "agentId": "a:3", "text": "当天面包店几点开门？", "category": "fact", "sequence": 103}
+{"type": "query", "id": "acceptance-fact-05", "worldId": "fixed-world", "agentId": "a:4", "text": "当天社区中心几点开门？", "category": "fact", "sequence": 104}
+{"type": "query", "id": "acceptance-fact-06", "worldId": "fixed-world", "agentId": "a:0", "text": "当天花店几点开门？", "category": "fact", "sequence": 105}
+{"type": "query", "id": "acceptance-fact-07", "worldId": "fixed-world", "agentId": "a:1", "text": "当天书店几点开门？", "category": "fact", "sequence": 106}
+{"type": "query", "id": "acceptance-fact-08", "worldId": "fixed-world", "agentId": "a:2", "text": "当天车站几点开门？", "category": "fact", "sequence": 107}
+{"type": "query", "id": "acceptance-fact-09", "worldId": "fixed-world", "agentId": "a:3", "text": "当天诊所几点开门？", "category": "fact", "sequence": 108}
+{"type": "query", "id": "acceptance-fact-10", "worldId": "fixed-world", "agentId": "a:4", "text": "当天广场几点开门？", "category": "fact", "sequence": 109}
+{"type": "query", "id": "acceptance-update-01", "worldId": "fixed-world", "agentId": "a:0", "text": "根据最新安排，林晨当天几点到咖啡店？", "category": "update", "sequence": 110}
+{"type": "query", "id": "acceptance-update-02", "worldId": "fixed-world", "agentId": "a:1", "text": "根据最新安排，周宁当天几点到图书馆？", "category": "update", "sequence": 111}
+{"type": "query", "id": "acceptance-update-03", "worldId": "fixed-world", "agentId": "a:2", "text": "根据最新安排，许岚当天几点到公园？", "category": "update", "sequence": 112}
+{"type": "query", "id": "acceptance-update-04", "worldId": "fixed-world", "agentId": "a:3", "text": "根据最新安排，陈禾当天几点到面包店？", "category": "update", "sequence": 113}
+{"type": "query", "id": "acceptance-update-05", "worldId": "fixed-world", "agentId": "a:4", "text": "根据最新安排，李悦当天几点到社区中心？", "category": "update", "sequence": 114}
+{"type": "query", "id": "acceptance-update-06", "worldId": "fixed-world", "agentId": "a:0", "text": "根据最新安排，吴悠当天几点到花店？", "category": "update", "sequence": 115}
+{"type": "query", "id": "acceptance-update-07", "worldId": "fixed-world", "agentId": "a:1", "text": "根据最新安排，郑安当天几点到书店？", "category": "update", "sequence": 116}
+{"type": "query", "id": "acceptance-update-08", "worldId": "fixed-world", "agentId": "a:2", "text": "根据最新安排，王晴当天几点到车站？", "category": "update", "sequence": 117}
+{"type": "query", "id": "acceptance-update-09", "worldId": "fixed-world", "agentId": "a:3", "text": "根据最新安排，孙川当天几点到诊所？", "category": "update", "sequence": 118}
+{"type": "query", "id": "acceptance-update-10", "worldId": "fixed-world", "agentId": "a:4", "text": "根据最新安排，赵露当天几点到广场？", "category": "update", "sequence": 119}
+{"type": "query", "id": "acceptance-relationship-01", "worldId": "fixed-world", "agentId": "a:0", "text": "林晨的姐姐叫什么名字？", "category": "relationship", "sequence": 120}
+{"type": "query", "id": "acceptance-relationship-02", "worldId": "fixed-world", "agentId": "a:1", "text": "周宁的姐姐叫什么名字？", "category": "relationship", "sequence": 121}
+{"type": "query", "id": "acceptance-relationship-03", "worldId": "fixed-world", "agentId": "a:2", "text": "许岚的姐姐叫什么名字？", "category": "relationship", "sequence": 122}
+{"type": "query", "id": "acceptance-relationship-04", "worldId": "fixed-world", "agentId": "a:3", "text": "陈禾的姐姐叫什么名字？", "category": "relationship", "sequence": 123}
+{"type": "query", "id": "acceptance-relationship-05", "worldId": "fixed-world", "agentId": "a:4", "text": "李悦的姐姐叫什么名字？", "category": "relationship", "sequence": 124}
+{"type": "query", "id": "acceptance-relationship-06", "worldId": "fixed-world", "agentId": "a:0", "text": "吴悠的姐姐叫什么名字？", "category": "relationship", "sequence": 125}
+{"type": "query", "id": "acceptance-relationship-07", "worldId": "fixed-world", "agentId": "a:1", "text": "郑安的姐姐叫什么名字？", "category": "relationship", "sequence": 126}
+{"type": "query", "id": "acceptance-relationship-08", "worldId": "fixed-world", "agentId": "a:2", "text": "王晴的姐姐叫什么名字？", "category": "relationship", "sequence": 127}
+{"type": "query", "id": "acceptance-relationship-09", "worldId": "fixed-world", "agentId": "a:3", "text": "孙川的姐姐叫什么名字？", "category": "relationship", "sequence": 128}
+{"type": "query", "id": "acceptance-relationship-10", "worldId": "fixed-world", "agentId": "a:4", "text": "赵露的姐姐叫什么名字？", "category": "relationship", "sequence": 129}
+{"type": "query", "id": "acceptance-commitment-01", "worldId": "fixed-world", "agentId": "a:0", "text": "林晨承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 130}
+{"type": "query", "id": "acceptance-commitment-02", "worldId": "fixed-world", "agentId": "a:1", "text": "周宁承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 131}
+{"type": "query", "id": "acceptance-commitment-03", "worldId": "fixed-world", "agentId": "a:2", "text": "许岚承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 132}
+{"type": "query", "id": "acceptance-commitment-04", "worldId": "fixed-world", "agentId": "a:3", "text": "陈禾承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 133}
+{"type": "query", "id": "acceptance-commitment-05", "worldId": "fixed-world", "agentId": "a:4", "text": "李悦承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 134}
+{"type": "query", "id": "acceptance-commitment-06", "worldId": "fixed-world", "agentId": "a:0", "text": "吴悠承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 135}
+{"type": "query", "id": "acceptance-commitment-07", "worldId": "fixed-world", "agentId": "a:1", "text": "郑安承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 136}
+{"type": "query", "id": "acceptance-commitment-08", "worldId": "fixed-world", "agentId": "a:2", "text": "王晴承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 137}
+{"type": "query", "id": "acceptance-commitment-09", "worldId": "fixed-world", "agentId": "a:3", "text": "孙川承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 138}
+{"type": "query", "id": "acceptance-commitment-10", "worldId": "fixed-world", "agentId": "a:4", "text": "赵露承诺在哪一天归还借来的书？", "category": "commitment", "sequence": 139}
+{"type": "query", "id": "acceptance-unanswerable-01", "worldId": "fixed-world", "agentId": "a:0", "text": "林晨的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 140}
+{"type": "query", "id": "acceptance-unanswerable-02", "worldId": "fixed-world", "agentId": "a:1", "text": "周宁的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 141}
+{"type": "query", "id": "acceptance-unanswerable-03", "worldId": "fixed-world", "agentId": "a:2", "text": "许岚的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 142}
+{"type": "query", "id": "acceptance-unanswerable-04", "worldId": "fixed-world", "agentId": "a:3", "text": "陈禾的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 143}
+{"type": "query", "id": "acceptance-unanswerable-05", "worldId": "fixed-world", "agentId": "a:4", "text": "李悦的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 144}
+{"type": "query", "id": "acceptance-unanswerable-06", "worldId": "fixed-world", "agentId": "a:0", "text": "吴悠的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 145}
+{"type": "query", "id": "acceptance-unanswerable-07", "worldId": "fixed-world", "agentId": "a:1", "text": "郑安的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 146}
+{"type": "query", "id": "acceptance-unanswerable-08", "worldId": "fixed-world", "agentId": "a:2", "text": "王晴的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 147}
+{"type": "query", "id": "acceptance-unanswerable-09", "worldId": "fixed-world", "agentId": "a:3", "text": "孙川的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 148}
+{"type": "query", "id": "acceptance-unanswerable-10", "worldId": "fixed-world", "agentId": "a:4", "text": "赵露的宠物狗叫什么名字？", "category": "unanswerable", "sequence": 149}

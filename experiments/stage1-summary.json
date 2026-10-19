@@ -1,0 +1,75 @@
+{
+  "technicalPassed": true,
+  "stageAccepted": false,
+  "pending": [
+    "独立人工审核合成题目与证据来源"
+  ],
+  "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+  "datasetSha256": "1672a7ec33ff1192bf4dc4eb4c3ee5fa6566a6cb7cd692a243cf2399b3e62044",
+  "tokenizer": {
+    "repository": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "sha256": {
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    }
+  },
+  "embeddingDimensions": 1024,
+  "windows": [
+    {
+      "context": 8192,
+      "inputTokens": 33,
+      "measuredTokens": 33,
+      "loadedContext": 8192,
+      "response": "08:00",
+      "passed": true
+    },
+    {
+      "context": 4096,
+      "inputTokens": 33,
+      "measuredTokens": 33,
+      "loadedContext": 4096,
+      "response": "08:00",
+      "passed": true
+    }
+  ],
+  "developmentAccuracy": 1,
+  "acceptanceAccuracy": 1,
+  "byCategory": {
+    "fact": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 30,
+      "accuracy": 1
+    },
+    "update": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 30,
+      "accuracy": 1
+    },
+    "relationship": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 30,
+      "accuracy": 1
+    },
+    "commitment": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 30,
+      "accuracy": 1
+    },
+    "unanswerable": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 30,
+      "accuracy": 1
+    }
+  },
+  "evidence": [
+    "/Users/kafufu/斯坦福小镇/artifacts/local/model-check/2026-10-14T08-18-38-565Z-704c5cd4",
+    "/Users/kafufu/斯坦福小镇/artifacts/local/model-pilot/2026-10-14T08-18-56-257Z-7960c805",
+    "/Users/kafufu/斯坦福小镇/artifacts/local/model-pilot/2026-10-14T08-19-34-980Z-830f99db"
+  ]
+}

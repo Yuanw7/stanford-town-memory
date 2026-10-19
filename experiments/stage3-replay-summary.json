@@ -1,0 +1,59 @@
+{
+  "run": "artifacts/local/replay/2026-10-14T08-57-09-221Z-bfc94fff",
+  "summary": {
+    "diagnosticOnly": true,
+    "processed": 450,
+    "answered": 150,
+    "expectedEvents": 450,
+    "expectedQueries": 150,
+    "attempts": 150,
+    "measured": 150,
+    "inputTokensKnown": 121404,
+    "outputTokensKnown": 1440,
+    "datasetSha256": "17db6d7ef5e35917d0059344ba74c15e9034db9a2b6078b897fc099debb3955e",
+    "initialStateSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "evaluation": {
+    "expected": 150,
+    "observed": 150,
+    "accuracy": 1,
+    "byCategory": {
+      "fact": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 30,
+        "accuracy": 1
+      },
+      "update": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 30,
+        "accuracy": 1
+      },
+      "relationship": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 30,
+        "accuracy": 1
+      },
+      "commitment": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 30,
+        "accuracy": 1
+      },
+      "unanswerable": {
+        "expected": 30,
+        "observed": 30,
+        "correct": 30,
+        "accuracy": 1
+      }
+    },
+    "complete": true,
+    "qualityGatePassed": true,
+    "runCompleted": true,
+    "answersSha256": "fcd2ffa9d1dadf09fc940657bfd6d3e82b3c8e1d6ce41484aac22ca5cf1b821f",
+    "diagnosticOnly": true
+  },
+  "classification": "diagnostic_full_history_control_not_memory_baseline"
+}

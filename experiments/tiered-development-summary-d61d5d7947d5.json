@@ -1,0 +1,1887 @@
+{
+  "measuredAt": "2026-10-15T07:10:08.476Z",
+  "diagnosticOnly": true,
+  "formalQualityAccepted": false,
+  "runs": [
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T06-16-07-089Z-503da23a",
+      "status": "failed",
+      "error": "invalid_fact_schema",
+      "extractionRevision": "initial_v1",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 53,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 9727,
+        "generationOutputTokens": 1777,
+        "embeddingInputTokens": 1414,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 96573.99358500005
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "summary": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 873,
+          "generationOutputTokens": 521,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 24696.77775
+        },
+        "importance": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1238,
+          "generationOutputTokens": 6,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 2816.827418
+        },
+        "memory_embedding": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 612,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 1039.5892080000003
+        },
+        "retrieval_embedding": {
+          "attempts": 11,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 180,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 265.71054100000765
+        },
+        "memory_query": {
+          "attempts": 10,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 4458,
+          "generationOutputTokens": 74,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 14149.368332999984
+        },
+        "commitment_action": {
+          "attempts": 1,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 498,
+          "generationOutputTokens": 17,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 2043.3029999999999
+        },
+        "tiered_extract": {
+          "attempts": 5,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 2660,
+          "generationOutputTokens": 1159,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 51258.692584000026
+        },
+        "tiered_memory_embedding": {
+          "attempts": 8,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 622,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 303.7247510000161
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "baseline": {
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 6,
+              "confirmed": 1,
+              "unassessed": 0,
+              "rateAmongAssessed": 0.16666666666666666,
+              "lowerBoundRate": 0.16666666666666666
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "update": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 1,
+                "accuracy": 0.5,
+                "missing": 0
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 10,
+                "correct": 9,
+                "accuracy": 0.9,
+                "missing": 0
+              }
+            ]
+          },
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "de8ab97da807c9dbdd79e11874057e9a43264cff0b18259855d64410152591f1",
+      "evaluationSha256": "1ffe394393759aeb4d7113b51b73b784db97d22e941f858ae87d544c4ad71d6f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T06-19-55-466Z-47bd745e",
+      "status": "failed",
+      "error": "invalid_fact_schema",
+      "extractionRevision": "source_only_v2_literal_values",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 41,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 7664,
+        "generationOutputTokens": 918,
+        "embeddingInputTokens": 792,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 47130.62829200002
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "summary": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 873,
+          "generationOutputTokens": 521,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 23340.061291
+        },
+        "importance": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1238,
+          "generationOutputTokens": 6,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 2839.1214170000017
+        },
+        "memory_embedding": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 612,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 269.8486660000053
+        },
+        "retrieval_embedding": {
+          "attempts": 11,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 180,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 226.84483300000647
+        },
+        "memory_query": {
+          "attempts": 10,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 4458,
+          "generationOutputTokens": 74,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 4223.496001000003
+        },
+        "commitment_action": {
+          "attempts": 1,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 498,
+          "generationOutputTokens": 17,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 802.8922089999978
+        },
+        "tiered_extract": {
+          "attempts": 1,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 597,
+          "generationOutputTokens": 300,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 15428.363875000003
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "baseline": {
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 6,
+              "confirmed": 1,
+              "unassessed": 0,
+              "rateAmongAssessed": 0.16666666666666666,
+              "lowerBoundRate": 0.16666666666666666
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "update": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 1,
+                "accuracy": 0.5,
+                "missing": 0
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 10,
+                "correct": 9,
+                "accuracy": 0.9,
+                "missing": 0
+              }
+            ]
+          },
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "2b51e9282f66aca948bf50ae61d410228f231b7f543693f056c98474d3a23719",
+      "evaluationSha256": "1ffe394393759aeb4d7113b51b73b784db97d22e941f858ae87d544c4ad71d6f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T06-22-43-216Z-287af870",
+      "status": "failed",
+      "error": "fact_value_not_in_quote",
+      "extractionRevision": "source_only_v3_schema_decode",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 41,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 7664,
+        "generationOutputTokens": 977,
+        "embeddingInputTokens": 792,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 43419.06021100002
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "summary": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 873,
+          "generationOutputTokens": 521,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 21750.565459000005
+        },
+        "importance": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1238,
+          "generationOutputTokens": 6,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 2783.999832999999
+        },
+        "memory_embedding": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 612,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 245.59787599999981
+        },
+        "retrieval_embedding": {
+          "attempts": 11,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 180,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 316.6605430000018
+        },
+        "memory_query": {
+          "attempts": 10,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 4458,
+          "generationOutputTokens": 74,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 3180.70391700001
+        },
+        "commitment_action": {
+          "attempts": 1,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 498,
+          "generationOutputTokens": 17,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 850.9805410000008
+        },
+        "tiered_extract": {
+          "attempts": 1,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 597,
+          "generationOutputTokens": 359,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 14290.552042
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "baseline": {
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 6,
+              "confirmed": 1,
+              "unassessed": 0,
+              "rateAmongAssessed": 0.16666666666666666,
+              "lowerBoundRate": 0.16666666666666666
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "update": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 1,
+                "accuracy": 0.5,
+                "missing": 0
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 10,
+                "correct": 9,
+                "accuracy": 0.9,
+                "missing": 0
+              }
+            ]
+          },
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "cdb5cb57cb2424584e5d5c8b2e7c6628f412b046686912fff9c33a32cd7cb8bf",
+      "evaluationSha256": "1ffe394393759aeb4d7113b51b73b784db97d22e941f858ae87d544c4ad71d6f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T06-24-32-810Z-e115c188",
+      "status": "failed",
+      "error": "fact_value_not_in_quote",
+      "extractionRevision": "source_only_v4_schema_bounded_repair",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 2,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 1645,
+        "generationOutputTokens": 646,
+        "embeddingInputTokens": 0,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 26648.716998999997
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "tiered_extract": {
+          "attempts": 2,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1645,
+          "generationOutputTokens": 646,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 26648.716998999997
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          },
+          "baseline": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "9ed4d48af37c3c49c6dcf847a0676ac3ce4c782977a49c76ba6631f75c01663f",
+      "evaluationSha256": "14a9186283717bf5a7e3ff9c341b793c71cf8e47aba055a6c4e4aa71d143c57f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T06-25-47-264Z-c7182159",
+      "status": "failed",
+      "error": "fact_value_not_in_quote",
+      "extractionRevision": "source_only_v5_sentence_evidence",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 2,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 1704,
+        "generationOutputTokens": 779,
+        "embeddingInputTokens": 0,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 32282.485625
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "tiered_extract": {
+          "attempts": 2,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1704,
+          "generationOutputTokens": 779,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 32282.485625
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          },
+          "baseline": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "306f8461dc49e0c8f4f62ba7962bd36ca224dc48885ff4adbcc6752604e4819a",
+      "evaluationSha256": "14a9186283717bf5a7e3ff9c341b793c71cf8e47aba055a6c4e4aa71d143c57f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T06-27-06-122Z-b81f1aee",
+      "status": "failed",
+      "error": "unverified_explicit_acceptance",
+      "extractionRevision": "source_only_v6_coupled_sentence_evidence",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 24,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 3972,
+        "generationOutputTokens": 2970,
+        "embeddingInputTokens": 1570,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 119648.93458399999
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "tiered_extract": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 3972,
+          "generationOutputTokens": 2970,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 118759.944709
+        },
+        "tiered_memory_embedding": {
+          "attempts": 18,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 1570,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 888.9898749999847
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          },
+          "baseline": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "ce3c69cfb67d283e74896e48edc6c911e176ad9a06c0db0c36e68bd419bb7d45",
+      "evaluationSha256": "14a9186283717bf5a7e3ff9c341b793c71cf8e47aba055a6c4e4aa71d143c57f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T07-01-07-645Z-e215baaa",
+      "status": "failed",
+      "error": "output_truncated",
+      "extractionRevision": "source_only_v7_affirmative_delivery",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 7,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 1975,
+        "generationOutputTokens": 1622,
+        "embeddingInputTokens": 352,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 62554.11145999999
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "tiered_extract": {
+          "attempts": 3,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1975,
+          "generationOutputTokens": 1622,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 62400.596626
+        },
+        "tiered_memory_embedding": {
+          "attempts": 4,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 352,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 153.5148339999978
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "tiered_512": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          },
+          "baseline": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "aa0a8c03c4eb128f917d944b1e624c2ed3d9e81b8a365f614714aa41b312073b",
+      "evaluationSha256": "14a9186283717bf5a7e3ff9c341b793c71cf8e47aba055a6c4e4aa71d143c57f"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T07-03-16-342Z-c1e66c7b",
+      "status": "failed",
+      "error": "invalid_or_ungrounded_query_plan",
+      "extractionRevision": "source_only_v8_record_cap_calendar_dates",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 31,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 5089,
+        "generationOutputTokens": 2444,
+        "embeddingInputTokens": 1609,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 96596.859665
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "tiered_extract": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 4300,
+          "generationOutputTokens": 2394,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 92536.55870799998
+        },
+        "tiered_memory_embedding": {
+          "attempts": 18,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 1576,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 591.2447910000228
+        },
+        "tiered_query_plan": {
+          "attempts": 3,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 366,
+          "generationOutputTokens": 38,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 1943.069875000001
+        },
+        "tiered_retrieval_embedding": {
+          "attempts": 2,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 33,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 52.98583299999882
+        },
+        "memory_query": {
+          "attempts": 2,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 423,
+          "generationOutputTokens": 12,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 1473.000457999995
+        }
+      },
+      "evaluation": {
+        "complete": false,
+        "byVariant": {
+          "tiered_512": {
+            "expected": 10,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 0.2,
+            "missing": 8,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 2,
+              "confirmed": 0,
+              "unassessed": 4,
+              "rateAmongAssessed": 0,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 0.2,
+                "missing": 8
+              }
+            ]
+          },
+          "baseline": {
+            "expected": 10,
+            "observed": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "missing": 10,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 0,
+              "confirmed": 0,
+              "unassessed": 6,
+              "rateAmongAssessed": null,
+              "lowerBoundRate": 0
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "update": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 2
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 0,
+                "correct": 0,
+                "accuracy": 0,
+                "missing": 10
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "c57a719228defeb30323b3d6a20d1c5abbefcc9996eb82abbeb613d51961d3bf",
+      "evaluationSha256": "37bff14c1cebd7549282a4908eb908c478c39677a6ea21c2565099f2dfce2156"
+    },
+    {
+      "run": "artifacts/local/policy-comparison/2026-10-15T07-05-38-496Z-d3f56694",
+      "status": "completed",
+      "error": null,
+      "extractionRevision": "source_only_v9_capped_grounded_plan",
+      "datasetSha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da",
+      "costs": {
+        "attempts": 97,
+        "unknownUsageAttempts": 0,
+        "generationInputTokens": 17003,
+        "generationOutputTokens": 3233,
+        "embeddingInputTokens": 2548,
+        "embeddingOutputTokens": null,
+        "embeddingOutputUsageReason": "no embedding completion-token field",
+        "clientRequestElapsedMs": 150178.75766300003
+      },
+      "allGatewayScopeAndUsageMatched": true,
+      "byPurpose": {
+        "tiered_extract": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 4300,
+          "generationOutputTokens": 2394,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 88839.92570800002
+        },
+        "tiered_memory_embedding": {
+          "attempts": 18,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 1576,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 569.233083000021
+        },
+        "tiered_query_plan": {
+          "attempts": 11,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1304,
+          "generationOutputTokens": 142,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 6191.978998000006
+        },
+        "tiered_retrieval_embedding": {
+          "attempts": 11,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 180,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 325.3983299999818
+        },
+        "memory_query": {
+          "attempts": 20,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 8526,
+          "generationOutputTokens": 147,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 26856.287375999993
+        },
+        "commitment_action": {
+          "attempts": 2,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 762,
+          "generationOutputTokens": 23,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 2614.2192910000012
+        },
+        "summary": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 873,
+          "generationOutputTokens": 521,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 21413.223541000014
+        },
+        "importance": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 1238,
+          "generationOutputTokens": 6,
+          "embeddingInputTokens": 0,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 2801.0050849999825
+        },
+        "memory_embedding": {
+          "attempts": 6,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 612,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 297.25475000003644
+        },
+        "retrieval_embedding": {
+          "attempts": 11,
+          "unknownUsageAttempts": 0,
+          "generationInputTokens": 0,
+          "generationOutputTokens": 0,
+          "embeddingInputTokens": 180,
+          "embeddingOutputTokens": null,
+          "embeddingOutputUsageReason": "no embedding completion-token field",
+          "clientRequestElapsedMs": 270.231501000002
+        }
+      },
+      "evaluation": {
+        "complete": true,
+        "byVariant": {
+          "tiered_512": {
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 6,
+              "confirmed": 1,
+              "unassessed": 0,
+              "rateAmongAssessed": 0.16666666666666666,
+              "lowerBoundRate": 0.16666666666666666
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "update": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 1,
+                "accuracy": 0.5,
+                "missing": 0
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 10,
+                "correct": 9,
+                "accuracy": 0.9,
+                "missing": 0
+              }
+            ]
+          },
+          "baseline": {
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0,
+            "contradictions": {
+              "expectedAnnotated": 6,
+              "assessed": 6,
+              "confirmed": 1,
+              "unassessed": 0,
+              "rateAmongAssessed": 0.16666666666666666,
+              "lowerBoundRate": 0.16666666666666666
+            },
+            "unanswerable": {
+              "expected": 2,
+              "unsupportedValidAnswers": 0
+            },
+            "byCategory": {
+              "fact": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "update": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 1,
+                "accuracy": 0.5,
+                "missing": 0
+              },
+              "relationship": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "commitment": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              },
+              "unanswerable": {
+                "expected": 2,
+                "observed": 2,
+                "correct": 2,
+                "accuracy": 1,
+                "missing": 0
+              }
+            },
+            "byRepetition": [
+              {
+                "repetition": 1,
+                "expected": 10,
+                "observed": 10,
+                "correct": 9,
+                "accuracy": 0.9,
+                "missing": 0
+              }
+            ]
+          }
+        }
+      },
+      "callsSha256": "bb4eba72f5ee0336ab06546104a6a9e860e06cf92f50812dd805077141ab3163",
+      "evaluationSha256": "a02f46529a28d2a123558d32067206cc27c0c8c8061bfb42ba4be5e6da81947d"
+    }
+  ],
+  "developmentCosts": {
+    "attempts": 298,
+    "unknownUsageAttempts": 0,
+    "generationInputTokens": 56443,
+    "generationOutputTokens": 15366,
+    "embeddingInputTokens": 9077,
+    "embeddingOutputTokens": null,
+    "embeddingOutputUsageReason": "no embedding completion-token field",
+    "clientRequestElapsedMs": 675033.5480840001
+  },
+  "allGatewayScopeAndUsageMatched": true,
+  "optimizationConclusion": "Not established; preserve incomplete runs and all development costs. No savings ratio computed.",
+  "pending": [
+    "Reliable extraction, including negation and validity dates",
+    "Complete repeated independent-maintenance comparison",
+    "Archive fallback and query-count break-even",
+    "Human reviewed holdout, formal matrix and Convex parity"
+  ],
+  "analysisScriptSha256": "7b823f8ae7b770204fab5e4066ac51fcde7f8e01b7c2aeee869da45dfcc98247"
+}

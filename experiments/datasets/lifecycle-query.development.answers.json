@@ -1,0 +1,10 @@
+{
+  "id": "development-cafe-opening",
+  "acceptedAnswers": [
+    "08:30"
+  ],
+  "sourceEventIds": [
+    "development-message-01"
+  ],
+  "reviewStatus": "synthetic_development_not_human_reviewed"
+}

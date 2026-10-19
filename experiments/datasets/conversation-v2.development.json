@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "type": "conversation",
+  "id": "development-cafe-01",
+  "worldId": "development-v2",
+  "createdAtMs": 1792054800000,
+  "participants": [
+    {
+      "agentId": "nora",
+      "name": "Nora"
+    },
+    {
+      "agentId": "ivo",
+      "name": "Ivo"
+    }
+  ],
+  "observedBy": [
+    "nora",
+    "ivo"
+  ],
+  "messages": [
+    {
+      "id": "development-message-01",
+      "authorAgentId": "nora",
+      "atMs": 1792054801000,
+      "text": "The Riverside Cafe now opens at 08:30 instead of 08:00."
+    },
+    {
+      "id": "development-message-02",
+      "authorAgentId": "ivo",
+      "atMs": 1792054802000,
+      "text": "Thank you. I will bring your notebook to the cafe tomorrow at 09:00."
+    },
+    {
+      "id": "development-message-03",
+      "authorAgentId": "nora",
+      "atMs": 1792054803000,
+      "text": "Thank you, Ivo. I will meet you there."
+    }
+  ]
+}

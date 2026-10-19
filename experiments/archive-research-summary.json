@@ -1,0 +1,18 @@
+{
+  "diagnosticOnly": true,
+  "positiveDevelopmentRun": "artifacts/local/policy-comparison/2026-10-16T14-46-33-809Z-2b92c0de",
+  "negativeBoundaryRun": "artifacts/local/policy-comparison/2026-10-16T14-51-34-915Z-015fd670",
+  "positiveGenerationTokenChangeRate": {
+    "baseline": 0,
+    "archive_512": -0.5705227743271222
+  },
+  "boundaryAccuracy": {
+    "baseline": 1,
+    "archive_512": 0.5
+  },
+  "formalQualityAccepted": false,
+  "conclusion": "Generation-token savings observed on repeated development workload, not a general winner: snapshot storage grows and late historical correction fails.",
+  "next": "Separate knowledge observation time from fact-validity time before holdout/full matrix.",
+  "positiveReportSha256": "e1768ffbbace29149784942a2dc8ad0bb9ccf551a8126787de02d066a9e8ecd4",
+  "negativeReportSha256": "a82126ad422f966296048af7da0d6ab00366fc83bfe8b8ba75721d63f8ca0a99"
+}

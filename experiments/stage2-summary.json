@@ -1,0 +1,34 @@
+{
+  "measuredAt": "2026-10-14T14:42:12.402Z",
+  "run": "artifacts/local/town-observe/2026-10-14T14-11-49-068Z-e5b8e01f",
+  "status": "completed",
+  "error": null,
+  "stageAccepted": true,
+  "gates": {
+    "completed": true,
+    "duration": true,
+    "activity": true,
+    "persistence": true,
+    "stoppedAndDrained": true,
+    "attemptsEnded": true,
+    "scopes": true,
+    "healthySnapshots": true
+  },
+  "activity": {
+    "passed": true,
+    "completedConversationsDelta": 19,
+    "newMemories": 36,
+    "persistenceRestartAccepted": false,
+    "pending": [
+      "暂停重启后的持久化验收",
+      "请求完整结束状态核查"
+    ]
+  },
+  "admittedAttempts": 317,
+  "terminalOutcomes": {
+    "succeeded": 317
+  },
+  "unmatchedRequestIds": [],
+  "snapshotSha256": "4756cdfe5ef6fd70d0037fc7e39f5157b621f650333e1da497ce247041a14606",
+  "limitation": "仅 P2 本地小镇工程验收；不代表题集人工审核或 memory 优化通过。"
+}

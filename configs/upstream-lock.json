@@ -1,0 +1,24 @@
+{
+  "upstream": "https://github.com/a16z-infra/ai-town",
+  "commit": "8e05997f2409275669c8344b84a51692e83f3f33",
+  "patch": "configs/ai-town-local.patch",
+  "lockfileSha256": "772415cf255c0590e4144a5477ee68bb8a4bad91b7b74b68e0a90c63dcb6e17f",
+  "build": "passed",
+  "deployed": true,
+  "images": {
+    "backend": "ghcr.io/get-convex/convex-backend@sha256:d715e9ec088784407ca4ba2d3db592702cd328d02c76cdca3852c0018f2a76b4",
+    "dashboard": "ghcr.io/get-convex/convex-dashboard@sha256:f85cf0d0448b9c835ae3df5c7c1c6f0145dd4c8f0f92eb0245daf304efdd9f1a"
+  },
+  "containersHealthy": true,
+  "researchQuerySource": "integrations/ai-town/research.ts",
+  "researchPatch": "configs/ai-town-research.patch",
+  "researchPatchSha256": "7d94603330da4670ff49acb50e5a3df5c9a7180dfdd4a59185070217cbc7eb80",
+  "newSources": {
+    "convex/research.ts": "integrations/ai-town/research.ts",
+    "convex/util/researchTrace.ts": "integrations/ai-town/researchTrace.ts",
+    "convex/aiTown/conversation-lifecycle.test.ts": "integrations/ai-town/conversation-lifecycle.test.ts",
+    "convex/util/memoryScoring.ts": "integrations/ai-town/memoryScoring.ts",
+    "convex/util/memoryScoring.test.ts": "integrations/ai-town/memoryScoring.test.ts",
+    "convex/util/researchTrace.test.ts": "integrations/ai-town/researchTrace.test.ts"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "town-qwen",
+  "embeddingModel": "mxbai-embed-large",
+  "host": "http://127.0.0.1:11434",
+  "contextWindowTokens": 8192,
+  "maxInputTokens": 6500,
+  "maxOutputTokens": 128,
+  "temperature": 0,
+  "seed": 42,
+  "repetitions": 3,
+  "maxTotalCalls": 200,
+  "wallTimeLimitSeconds": 1800,
+  "timeoutMs": 120000,
+  "dataset": "experiments/datasets/pilot-development.jsonl",
+  "answers": "experiments/datasets/pilot-development.answers.jsonl"
+}

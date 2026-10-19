@@ -1,0 +1,438 @@
+{
+  "measuredAt": "2026-10-16T14:52:19.163Z",
+  "run": "artifacts/local/policy-comparison/2026-10-16T14-51-34-915Z-015fd670",
+  "diagnosticOnly": true,
+  "status": "completed",
+  "distinctQuestions": 2,
+  "summary": {
+    "diagnosticOnly": true,
+    "comparisonScope": "Independent maintenance per policy; read-only offline QA and single-step synthetic actions",
+    "expectedAnswers": 4,
+    "observedAnswers": 4,
+    "distinctQuestions": 2,
+    "attempts": 28,
+    "allGatewayScopeAndUsageMatched": true,
+    "actions": {
+      "baseline": {
+        "due": 0,
+        "completed": 0,
+        "completionRate": null
+      },
+      "archive_512": {
+        "due": 0,
+        "completed": 0,
+        "completionRate": null
+      }
+    },
+    "pending": [
+      "Human reviewed holdout and full matrix",
+      "Convex/online parity",
+      "Extraction semantic entailment and general entity resolution"
+    ]
+  },
+  "evaluation": {
+    "diagnosticOnly": true,
+    "runCompleted": true,
+    "distinctQuestions": 2,
+    "repetitions": 1,
+    "byVariant": {
+      "baseline": {
+        "expected": 2,
+        "observed": 2,
+        "correct": 2,
+        "accuracy": 1,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 2,
+          "assessed": 2,
+          "confirmed": 0,
+          "unassessed": 0,
+          "rateAmongAssessed": 0,
+          "lowerBoundRate": 0
+        },
+        "unanswerable": {
+          "expected": 0,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "update": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          }
+        ]
+      },
+      "archive_512": {
+        "expected": 2,
+        "observed": 2,
+        "correct": 1,
+        "accuracy": 0.5,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 2,
+          "assessed": 2,
+          "confirmed": 1,
+          "unassessed": 0,
+          "rateAmongAssessed": 0.5,
+          "lowerBoundRate": 0.5
+        },
+        "unanswerable": {
+          "expected": 0,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "update": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 2,
+            "observed": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "missing": 0
+          }
+        ]
+      }
+    },
+    "rows": [
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "late-history",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "08:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "late-current",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "archive_512",
+        "queryId": "late-history",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "09:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 1,
+        "strategy": "archive_512",
+        "queryId": "late-current",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      }
+    ],
+    "complete": true,
+    "formalQualityAccepted": false,
+    "limitation": "Development QA; contradictions only for predeclared exact counteranswers, with coverage. No human review or actual task-completion gate.",
+    "answersSha256": "a1f7f83088cd9f36591179a00805cb829b06ba4103a970a291131317d7d6471d",
+    "archiveSourceOverlap": {
+      "byVariant": {
+        "archive_512": {
+          "expectedAnswerable": 2,
+          "anyAnnotatedSourceSelected": 1,
+          "unassessed": 0,
+          "rows": [
+            {
+              "repetition": 1,
+              "queryId": "late-history",
+              "selectedSourceEventIds": [
+                "late-old-m1",
+                "late-old-m2"
+              ],
+              "annotatedSourceEventIds": [
+                "late-correction-m1",
+                "late-correction-m2"
+              ],
+              "anyAnnotatedSourceSelected": false
+            },
+            {
+              "repetition": 1,
+              "queryId": "late-current",
+              "selectedSourceEventIds": [
+                "late-correction-m1",
+                "late-old-m1",
+                "late-correction-m2"
+              ],
+              "annotatedSourceEventIds": [
+                "late-correction-m1",
+                "late-correction-m2"
+              ],
+              "anyAnnotatedSourceSelected": true
+            }
+          ]
+        }
+      },
+      "limitation": "Source-ID overlap only: annotations may list alternative evidence. Overlap does not establish complete evidence or semantic entailment; unknown-answer questions are not scored."
+    },
+    "archiveSourceOverlapSourceSha256": "b5706ee8ba4582b272084cfd977ee0e8a024b05636b57338755ccb60a2b2716e",
+    "evaluatorSourceSha256": "f811de3a73dfd10a0726735406a144cd5f0e688fabc7be9539490ad95611c44b"
+  },
+  "ablations": [],
+  "sharedMaintenance": {
+    "attempts": 0,
+    "failures": 0,
+    "unknownUsageAttempts": 0,
+    "clientRequestElapsedMs": 0,
+    "generation": {
+      "attempts": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "embedding": {
+      "attempts": 0,
+      "inputTokens": 0,
+      "outputTokens": null,
+      "outputUsageReason": "no embedding completion-token field"
+    }
+  },
+  "queryCostsByVariant": {
+    "baseline": {
+      "attempts": 4,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 3377.148331999997,
+      "generation": {
+        "attempts": 2,
+        "inputTokens": 818,
+        "outputTokens": 20
+      },
+      "embedding": {
+        "attempts": 2,
+        "inputTokens": 58,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "archive_512": {
+      "attempts": 4,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 2421.225334000006,
+      "generation": {
+        "attempts": 2,
+        "inputTokens": 595,
+        "outputTokens": 20
+      },
+      "embedding": {
+        "attempts": 2,
+        "inputTokens": 58,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "answerCostsByVariant": {
+    "baseline": {
+      "attempts": 2,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 3297.1401240000014,
+      "generation": {
+        "attempts": 2,
+        "inputTokens": 818,
+        "outputTokens": 20
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "archive_512": {
+      "attempts": 2,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 2363.5421670000032,
+      "generation": {
+        "attempts": 2,
+        "inputTokens": 595,
+        "outputTokens": 20
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "allOwnedCostsByVariant": {
+    "baseline": {
+      "attempts": 16,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 27296.054665999996,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 2415,
+        "outputTokens": 463
+      },
+      "embedding": {
+        "attempts": 6,
+        "inputTokens": 520,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "archive_512": {
+      "attempts": 12,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 2645.7056690000063,
+      "generation": {
+        "attempts": 2,
+        "inputTokens": 595,
+        "outputTokens": 20
+      },
+      "embedding": {
+        "attempts": 10,
+        "inputTokens": 484,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "persistedPolicySnapshotBytes": {
+    "baseline": 110319,
+    "archive_512": 217624
+  },
+  "actionCostsByVariant": {
+    "baseline": {
+      "attempts": 0,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 0,
+      "generation": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "archive_512": {
+      "attempts": 0,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 0,
+      "generation": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "maintenanceCostsByVariant": {
+    "baseline": {
+      "attempts": 12,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 23918.906334,
+      "generation": {
+        "attempts": 8,
+        "inputTokens": 1597,
+        "outputTokens": 443
+      },
+      "embedding": {
+        "attempts": 4,
+        "inputTokens": 462,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "archive_512": {
+      "attempts": 8,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 224.4803350000002,
+      "generation": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "embedding": {
+        "attempts": 8,
+        "inputTokens": 426,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "queryInputReductionRate": {
+    "baseline": 0,
+    "archive_512": 0.2726161369193154
+  },
+  "totalOwnedGenerationTokenChangeRate": {
+    "baseline": 0,
+    "archive_512": -0.7863099374565671
+  },
+  "callsSha256": "3b924cc1cf533ac503ad578636a0b705e822f0533c0de0b611cc256705d2e82c",
+  "evaluationSha256": "f4ca25e5c87cbb2eeb7fc208f464da35c341b11ddaa22815ae3892137ec56f90",
+  "analysisScriptSha256": "3af5ba29ba218e0329a7b4a3fb4b6271689f29636048c20d13c83d86d477f947",
+  "analysisDependencySha256": {
+    "lib/policy-ablation.js": "d8c232a589d9620ec390d24736bc1de58fb58b8865037bf43260d47f419e364f",
+    "lib/conversations-v2.js": "e1be969dc14a955c05c570b52d46136b76ecc2cbe3b11bbe5fdf06ced41b2d89"
+  },
+  "limitations": [
+    "Independent per-policy maintenance; read-only offline QA plus optional single-step simulation, not online interaction",
+    "Distinct question IDs share a history; not independent statistical samples",
+    "Request elapsed time sums client calls, including service wait/load; snapshot bytes are JSON artifacts, not database or power measurements",
+    "queryCosts include action-probe retrieval/planning; actionCosts count commitment_action generation only; allOwnedCosts count both exactly once",
+    "Synthetic development dataset; see config diagnostic notes",
+    "No human review, full quality gates, or Convex parity",
+    "Offline memory prototypes; archive_retrieval filters observation time, not fact-validity time; no semantic entailment or general fallback guarantee"
+  ]
+}

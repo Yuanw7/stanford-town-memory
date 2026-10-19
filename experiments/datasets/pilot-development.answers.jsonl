@@ -1,0 +1,20 @@
+{"id": "development-fact-01", "acceptedAnswers": ["08:00"], "sourceEventIds": ["development-fact-01-e1"]}
+{"id": "development-fact-02", "acceptedAnswers": ["09:00"], "sourceEventIds": ["development-fact-02-e1"]}
+{"id": "development-fact-03", "acceptedAnswers": ["10:00"], "sourceEventIds": ["development-fact-03-e1"]}
+{"id": "development-fact-04", "acceptedAnswers": ["11:00"], "sourceEventIds": ["development-fact-04-e1"]}
+{"id": "development-update-01", "acceptedAnswers": ["13:30"], "sourceEventIds": ["development-update-01-e1", "development-update-01-e2"]}
+{"id": "development-update-02", "acceptedAnswers": ["14:30"], "sourceEventIds": ["development-update-02-e1", "development-update-02-e2"]}
+{"id": "development-update-03", "acceptedAnswers": ["15:30"], "sourceEventIds": ["development-update-03-e1", "development-update-03-e2"]}
+{"id": "development-update-04", "acceptedAnswers": ["16:30"], "sourceEventIds": ["development-update-04-e1", "development-update-04-e2"]}
+{"id": "development-relationship-01", "acceptedAnswers": ["陆霖"], "sourceEventIds": ["development-relationship-01-e1"]}
+{"id": "development-relationship-02", "acceptedAnswers": ["高瑶"], "sourceEventIds": ["development-relationship-02-e1"]}
+{"id": "development-relationship-03", "acceptedAnswers": ["段衡"], "sourceEventIds": ["development-relationship-03-e1"]}
+{"id": "development-relationship-04", "acceptedAnswers": ["顾青"], "sourceEventIds": ["development-relationship-04-e1"]}
+{"id": "development-commitment-01", "acceptedAnswers": ["2026-11-01"], "sourceEventIds": ["development-commitment-01-e1"]}
+{"id": "development-commitment-02", "acceptedAnswers": ["2026-11-02"], "sourceEventIds": ["development-commitment-02-e1"]}
+{"id": "development-commitment-03", "acceptedAnswers": ["2026-11-03"], "sourceEventIds": ["development-commitment-03-e1"]}
+{"id": "development-commitment-04", "acceptedAnswers": ["2026-11-04"], "sourceEventIds": ["development-commitment-04-e1"]}
+{"id": "development-unanswerable-01", "acceptedAnswers": ["未知"], "sourceEventIds": ["development-unanswerable-01-e1"]}
+{"id": "development-unanswerable-02", "acceptedAnswers": ["未知"], "sourceEventIds": ["development-unanswerable-02-e1"]}
+{"id": "development-unanswerable-03", "acceptedAnswers": ["未知"], "sourceEventIds": ["development-unanswerable-03-e1"]}
+{"id": "development-unanswerable-04", "acceptedAnswers": ["未知"], "sourceEventIds": ["development-unanswerable-04-e1"]}

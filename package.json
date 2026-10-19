@@ -1,0 +1,40 @@
+{
+  "name": "斯坦福小镇",
+  "version": "1.0.0",
+  "description": "以 AI Town 为环境，研究 Agent 记忆策略的上下文成本、行为质量与运行可靠性。",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node index.js check",
+    "check:config": "node index.js check-config configs/experiment.example.json",
+    "test": "node --test tests/*.test.js",
+    "tokenizer:setup": "node scripts/setup-tokenizer.js",
+    "model:check": "node scripts/model-check.js",
+    "model:pilot": "node scripts/model-pilot.js",
+    "memory:smoke": "node scripts/memory-write-smoke.js",
+    "baseline:smoke": "node scripts/baseline-lifecycle.js",
+    "town:capture-v2": "node scripts/capture-conversations.js",
+    "memory:compare": "node scripts/memory-compare.js",
+    "memory:compare:evaluate": "node scripts/evaluate-memory-compare.js",
+    "commitment:actions": "node scripts/commitment-actions.js",
+    "policy:compare": "node scripts/policy-compare.js",
+    "tiered:probe": "node scripts/tiered-extraction-probe.js",
+    "tiered:probe:evaluate": "node scripts/evaluate-tiered-extraction.js",
+    "stage1": "node scripts/stage1.js",
+    "town:observe": "node scripts/town-observe.js",
+    "stage2:report": "node scripts/stage2-report.js",
+    "stage1:report": "node scripts/stage1-report.js",
+    "gateway": "node scripts/gateway.js",
+    "replay": "node scripts/replay.js",
+    "replay:evaluate": "node scripts/evaluate-replay.js",
+    "town:export": "node scripts/export-town-events.js",
+    "stage3:report": "node scripts/stage3-report.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true,
+  "dependencies": {
+    "@huggingface/tokenizers": "0.2.0"
+  }
+}

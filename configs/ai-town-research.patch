@@ -1,0 +1,344 @@
+diff --git a/convex/agent/conversation.ts b/convex/agent/conversation.ts
+index 9b7ce98..b85e01a 100644
+--- a/convex/agent/conversation.ts
++++ b/convex/agent/conversation.ts
+@@ -29,6 +29,7 @@ export async function startConversationMessage(
+   const embedding = await embeddingsCache.fetch(
+     ctx,
+     `${player.name} is talking to ${otherPlayer.name}`,
++    { worldId, agentId: agent.id, purpose: 'retrieval_embedding' },
+   );
+ 
+   const memories = await memory.searchMemories(
+@@ -64,6 +65,7 @@ export async function startConversationMessage(
+ 
+   const { content } = await chatCompletion({
+     messages,
++    researchScope: { worldId, agentId: agent.id, purpose: 'conversation' },
+     max_tokens: 300,
+     stop: stopWords(otherPlayer.name, player.name),
+   });
+@@ -98,6 +100,7 @@ export async function continueConversationMessage(
+   const embedding = await embeddingsCache.fetch(
+     ctx,
+     `What do you think about ${otherPlayer.name}?`,
++    { worldId, agentId: agent.id, purpose: 'retrieval_embedding' },
+   );
+   const memories = await memory.searchMemories(ctx, player.id as GameId<'players'>, embedding, 3);
+   const prompt = [
+@@ -130,6 +133,7 @@ export async function continueConversationMessage(
+ 
+   const { content } = await chatCompletion({
+     messages: llmMessages,
++    researchScope: { worldId, agentId: agent.id, purpose: 'conversation' },
+     max_tokens: 300,
+     stop: stopWords(otherPlayer.name, player.name),
+   });
+@@ -179,6 +183,7 @@ export async function leaveConversationMessage(
+ 
+   const { content } = await chatCompletion({
+     messages: llmMessages,
++    researchScope: { worldId, agentId: agent.id, purpose: 'conversation' },
+     max_tokens: 300,
+     stop: stopWords(otherPlayer.name, player.name),
+   });
+diff --git a/convex/agent/embeddingsCache.ts b/convex/agent/embeddingsCache.ts
+index 9aa1c6b..437b497 100644
+--- a/convex/agent/embeddingsCache.ts
++++ b/convex/agent/embeddingsCache.ts
+@@ -1,20 +1,25 @@
++import { ResearchScope } from '../util/researchTrace';
+ import { v } from 'convex/values';
+ import { ActionCtx, internalMutation, internalQuery } from '../_generated/server';
+ import { internal } from '../_generated/api';
+ import { Id } from '../_generated/dataModel';
+-import { fetchEmbeddingBatch } from '../util/llm';
++import { fetchEmbeddingBatch, getLLMConfig } from '../util/llm';
++import { embeddingCacheIdentity } from '../util/researchTrace';
+ 
+ const selfInternal = internal.agent.embeddingsCache;
+ 
+-export async function fetch(ctx: ActionCtx, text: string) {
+-  const result = await fetchBatch(ctx, [text]);
++export async function fetch(ctx: ActionCtx, text: string, scope?: ResearchScope) {
++  const result = await fetchBatch(ctx, [text], scope);
+   return result.embeddings[0];
+ }
+ 
+-export async function fetchBatch(ctx: ActionCtx, texts: string[]) {
++export async function fetchBatch(ctx: ActionCtx, texts: string[], scope?: ResearchScope) {
+   const start = Date.now();
+ 
+-  const textHashes = await Promise.all(texts.map((text) => hashText(text)));
++  const textHashes = await Promise.all(texts.map((text) => hashText(embeddingCacheIdentity(
++    text, scope, getLLMConfig().embeddingModel, process.env.RESEARCH_EMBEDDING_DIGEST ?? 'UNSET',
++    process.env.RESEARCH_EXPERIMENT_ID ?? 'local-town-p3',
++  ))));
+   const results = new Array<number[]>(texts.length);
+   const cacheResults = await ctx.runQuery(selfInternal.getEmbeddingsByText, {
+     textHashes,
+@@ -26,7 +31,7 @@ export async function fetchBatch(ctx: ActionCtx, texts: string[]) {
+   if (cacheResults.length < texts.length) {
+     const missingIndexes = [...results.keys()].filter((i) => !results[i]);
+     const missingTexts = missingIndexes.map((i) => texts[i]);
+-    const response = await fetchEmbeddingBatch(missingTexts);
++    const response = await fetchEmbeddingBatch(missingTexts, scope);
+     if (response.embeddings.length !== missingIndexes.length) {
+       throw new Error(
+         `Expected ${missingIndexes.length} embeddings, got ${response.embeddings.length}`,
+diff --git a/convex/agent/memory.ts b/convex/agent/memory.ts
+index 2599456..a841eb8 100644
+--- a/convex/agent/memory.ts
++++ b/convex/agent/memory.ts
+@@ -1,3 +1,5 @@
++import { normalizeMemoryScore } from '../util/memoryScoring';
++import { ResearchScope } from '../util/researchTrace';
+ import { v } from 'convex/values';
+ import { ActionCtx, DatabaseReader, internalMutation, internalQuery } from '../_generated/server';
+ import { Doc, Id } from '../_generated/dataModel';
+@@ -28,6 +30,7 @@ export async function rememberConversation(
+   playerId: GameId<'players'>,
+   conversationId: GameId<'conversations'>,
+ ) {
++  const scope = { worldId, agentId, purpose: 'summary' };
+   const data = await ctx.runQuery(selfInternal.loadConversation, {
+     worldId,
+     playerId,
+@@ -60,13 +63,14 @@ export async function rememberConversation(
+   llmMessages.push({ role: 'user', content: 'Summary:' });
+   const { content } = await chatCompletion({
+     messages: llmMessages,
++    researchScope: scope,
+     max_tokens: 500,
+   });
+   const description = `Conversation with ${otherPlayer.name} at ${new Date(
+     data.conversation._creationTime,
+   ).toLocaleString()}: ${content}`;
+-  const importance = await calculateImportance(description);
+-  const { embedding } = await fetchEmbedding(description);
++  const importance = await calculateImportance(description, { ...scope, purpose: 'importance' });
++  const { embedding } = await fetchEmbedding(description, { ...scope, purpose: 'memory_embedding' });
+   authors.delete(player.id as GameId<'players'>);
+   await ctx.runMutation(selfInternal.insertMemory, {
+     agentId,
+@@ -81,7 +85,7 @@ export async function rememberConversation(
+     },
+     embedding,
+   });
+-  await reflectOnMemories(ctx, worldId, playerId);
++  await reflectOnMemories(ctx, worldId, playerId, scope);
+   return description;
+ }
+ 
+@@ -180,8 +184,7 @@ function makeRange(values: number[]) {
+ }
+ 
+ function normalize(value: number, range: readonly [number, number]) {
+-  const [min, max] = range;
+-  return (value - min) / (max - min);
++  return normalizeMemoryScore(value, range);
+ }
+ 
+ export const rankAndTouchMemories = internalMutation({
+@@ -243,7 +246,7 @@ export const loadMessages = internalQuery({
+   },
+ });
+ 
+-async function calculateImportance(description: string) {
++async function calculateImportance(description: string, scope: ResearchScope) {
+   const { content: importanceRaw } = await chatCompletion({
+     messages: [
+       {
+@@ -253,6 +256,7 @@ async function calculateImportance(description: string) {
+       Answer on a scale of 0 to 9. Respond with number only, e.g. "5"`,
+       },
+     ],
++    researchScope: scope,
+     temperature: 0.0,
+     max_tokens: 1,
+   });
+@@ -326,6 +330,7 @@ async function reflectOnMemories(
+   ctx: ActionCtx,
+   worldId: Id<'worlds'>,
+   playerId: GameId<'players'>,
++  scope: ResearchScope,
+ ) {
+   const { memories, lastReflectionTs, name } = await ctx.runQuery(
+     internal.agent.memory.getReflectionMemories,
+@@ -360,6 +365,7 @@ async function reflectOnMemories(
+   );
+ 
+   const { content: reflection } = await chatCompletion({
++    researchScope: { ...scope, purpose: 'reflection' },
+     messages: [
+       {
+         role: 'user',
+@@ -372,8 +378,8 @@ async function reflectOnMemories(
+     const insights = JSON.parse(reflection) as { insight: string; statementIds: number[] }[];
+     const memoriesToSave = await asyncMap(insights, async (item) => {
+       const relatedMemoryIds = item.statementIds.map((idx: number) => memories[idx]._id);
+-      const importance = await calculateImportance(item.insight);
+-      const { embedding } = await fetchEmbedding(item.insight);
++      const importance = await calculateImportance(item.insight, { ...scope, purpose: 'reflection_importance' });
++      const { embedding } = await fetchEmbedding(item.insight, { ...scope, purpose: 'reflection_embedding' });
+       console.debug('adding reflection memory...', item.insight);
+       return {
+         description: item.insight,
+diff --git a/convex/aiTown/conversation.ts b/convex/aiTown/conversation.ts
+index fc93d56..6b23781 100644
+--- a/convex/aiTown/conversation.ts
++++ b/convex/aiTown/conversation.ts
+@@ -196,7 +196,8 @@ export class Conversation {
+       const agent = [...game.world.agents.values()].find((a) => a.playerId === playerId);
+       if (agent) {
+         agent.lastConversation = now;
+-        agent.toRemember = this.id;
++        // 零消息邀请可能在同一仿真步创建并结束，没有可记忆的对话。
++        if (this.numMessages > 0) agent.toRemember = this.id;
+       }
+     }
+     game.world.conversations.delete(this.id);
+diff --git a/convex/aiTown/main.ts b/convex/aiTown/main.ts
+index 5cc477f..d7aea8c 100644
+--- a/convex/aiTown/main.ts
++++ b/convex/aiTown/main.ts
+@@ -17,6 +17,11 @@ export async function createEngine(ctx: MutationCtx) {
+   return engineId;
+ }
+ 
++async function recordResearchControl(ctx: MutationCtx, worldId: Id<'worlds'>) {
++  const status = await loadWorldStatus(ctx.db, worldId);
++  await ctx.db.patch(status._id, { researchControlEpoch: (status.researchControlEpoch ?? 0) + 1 });
++}
++
+ async function loadWorldStatus(db: DatabaseReader, worldId: Id<'worlds'>) {
+   const worldStatus = await db
+     .query('worldStatus')
+@@ -39,6 +44,7 @@ export async function startEngine(ctx: MutationCtx, worldId: Id<'worlds'>) {
+   }
+   const now = Date.now();
+   const generationNumber = engine.generationNumber + 1;
++  await recordResearchControl(ctx, worldId);
+   await ctx.db.patch(engineId, {
+     // Forcibly advance time to the present. This does mean we'll skip
+     // simulating the time the engine was stopped, but we don't want
+@@ -66,6 +72,7 @@ export async function kickEngine(ctx: MutationCtx, worldId: Id<'worlds'>) {
+     throw new Error(`Engine ${engineId} isn't currently running`);
+   }
+   const generationNumber = engine.generationNumber + 1;
++  await recordResearchControl(ctx, worldId);
+   await ctx.db.patch(engineId, { generationNumber });
+   await ctx.scheduler.runAfter(0, internal.aiTown.main.runStep, {
+     worldId: worldId,
+@@ -83,6 +90,7 @@ export async function stopEngine(ctx: MutationCtx, worldId: Id<'worlds'>) {
+   if (!engine.running) {
+     throw new Error(`Engine ${engineId} isn't currently running`);
+   }
++  await recordResearchControl(ctx, worldId);
+   await ctx.db.patch(engineId, { running: false });
+ }
+ 
+diff --git a/convex/aiTown/schema.ts b/convex/aiTown/schema.ts
+index 55f2b61..b9594cb 100644
+--- a/convex/aiTown/schema.ts
++++ b/convex/aiTown/schema.ts
+@@ -21,6 +21,7 @@ export const aiTownTables = {
+     isDefault: v.boolean(),
+     engineId: v.id('engines'),
+     lastViewed: v.number(),
++    researchControlEpoch: v.optional(v.number()),
+     status: v.union(v.literal('running'), v.literal('stoppedByDeveloper'), v.literal('inactive')),
+   }).index('worldId', ['worldId']),
+ 
+diff --git a/convex/util/llm.ts b/convex/util/llm.ts
+index a4285d6..4f9756c 100644
+--- a/convex/util/llm.ts
++++ b/convex/util/llm.ts
+@@ -1,4 +1,4 @@
+-// That's right! No imports and no dependencies 🤯
++import { ResearchScope, researchHeaders } from './researchTrace';
+ 
+ const OPENAI_EMBEDDING_DIMENSION = 1536;
+ const TOGETHER_EMBEDDING_DIMENSION = 768;
+@@ -137,6 +137,10 @@ export async function chatCompletion(
+     model?: CreateChatCompletionRequest['model'];
+   },
+ ) {
++  const scope = body.researchScope;
++  delete body.researchScope;
++  const logicalCallId = crypto.randomUUID();
++  let researchAttempt = 0;
+   const config = getLLMConfig();
+   body.model = body.model ?? config.chatModel;
+   const stopWords = body.stop ? (typeof body.stop === 'string' ? [body.stop] : body.stop) : [];
+@@ -147,11 +151,13 @@ export async function chatCompletion(
+     retries,
+     ms,
+   } = await retryWithBackoff(async () => {
++    researchAttempt++;
+     const result = await fetch(config.url + '/v1/chat/completions', {
+       method: 'POST',
+       headers: {
+         'Content-Type': 'application/json',
+         ...AuthHeaders(),
++        ...researchHeaders(scope, logicalCallId, researchAttempt),
+       },
+ 
+       body: JSON.stringify(body),
+@@ -202,13 +208,13 @@ export async function tryPullOllama(model: string, error: string) {
+   }
+ }
+ 
+-export async function fetchEmbeddingBatch(texts: string[]) {
++export async function fetchEmbeddingBatch(texts: string[], scope?: ResearchScope) {
+   const config = getLLMConfig();
+   if (config.provider === 'ollama') {
+     return {
+       ollama: true as const,
+       embeddings: await Promise.all(
+-        texts.map(async (t) => (await ollamaFetchEmbedding(t)).embedding),
++        texts.map(async (t) => (await ollamaFetchEmbedding(t, scope)).embedding),
+       ),
+     };
+   }
+@@ -252,8 +258,8 @@ export async function fetchEmbeddingBatch(texts: string[]) {
+   };
+ }
+ 
+-export async function fetchEmbedding(text: string) {
+-  const { embeddings, ...stats } = await fetchEmbeddingBatch([text]);
++export async function fetchEmbedding(text: string, scope?: ResearchScope) {
++  const { embeddings, ...stats } = await fetchEmbeddingBatch([text], scope);
+   return { embedding: embeddings[0], ...stats };
+ }
+ 
+@@ -393,6 +399,7 @@ interface CreateEmbeddingResponse {
+ }
+ 
+ export interface CreateChatCompletionRequest {
++  researchScope?: ResearchScope;
+   /**
+    * ID of the model to use.
+    * @type {string}
+@@ -685,15 +692,20 @@ export class ChatCompletionContent {
+   }
+ }
+ 
+-export async function ollamaFetchEmbedding(text: string) {
++export async function ollamaFetchEmbedding(text: string, scope?: ResearchScope) {
++  const logicalCallId = crypto.randomUUID();
++  let researchAttempt = 0;
+   const config = getLLMConfig();
+   const { result } = await retryWithBackoff(async () => {
++    researchAttempt++;
+     const resp = await fetch(config.url + '/api/embeddings', {
+       method: 'POST',
+       headers: {
+         'Content-Type': 'application/json',
++        ...researchHeaders(scope, logicalCallId, researchAttempt),
+       },
+       body: JSON.stringify({ model: config.embeddingModel, prompt: text }),
++
+     });
+     if (resp.status === 404) {
+       const error = await resp.text();

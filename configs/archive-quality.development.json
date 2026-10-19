@@ -1,0 +1,61 @@
+{
+  "mode": "diagnostic_policy_comparison",
+  "host": "http://127.0.0.1:11435",
+  "model": "town-qwen",
+  "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+  "embeddingModel": "mxbai-embed-large",
+  "embeddingDigest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+  "embeddingDimensions": 1024,
+  "contextWindowTokens": 8192,
+  "maxInputTokens": 6500,
+  "maxOutputTokens": 1024,
+  "maxTotalCalls": 120,
+  "wallTimeLimitSeconds": 900,
+  "temperature": 0,
+  "seed": 42,
+  "dataset": {
+    "path": "experiments/datasets/memory-quality.development.json",
+    "sha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da"
+  },
+  "adaptations": [
+    "Qwen raw ChatML with exact tokenizer calibration",
+    "UTC ISO time instead of host locale",
+    "Serial calls and bounded output; reflection max 1024 tokens",
+    "Strict reflection source/schema validation",
+    "Independent local JSON transaction store; no Convex writes",
+    "Exact cosine over local scoped vectors instead of Convex vector search",
+    "Explicit logical clock; latest-100 by logical creation and insertion order",
+    "Read-only comparison probes; separate mutable touch probe",
+    "Independent maintenance per policy; schema-constrained tiered extraction with strict post-validation"
+  ],
+  "repetitions": 1,
+  "queryOutputTokens": 128,
+  "variants": [
+    {
+      "id": "baseline",
+      "policy": "baseline"
+    },
+    {
+      "id": "archive_512",
+      "policy": "archive_retrieval",
+      "memoryBudgetTokens": 512
+    }
+  ],
+  "diagnosticNotes": [
+    "Independent per-policy maintenance, frozen development workload and answer separation",
+    "Archive-only strategy embeds original visible messages without generation writes or semantic extraction",
+    "As-of queries filter observation time, not semantic validity; later retellings of history are excluded",
+    "Different memory policy comparison, not single-factor attribution; no critical-commitment pinning or online acceptance guarantee"
+  ],
+  "actionFixture": {
+    "path": "experiments/datasets/commitment-action.development.json",
+    "sha256": "c790798f7a321843c5574de5ad31c15f596bcb475464d68dd68b6d0573ac74b8"
+  },
+  "extractionRevision": "source_only_v9_capped_grounded_plan",
+  "extractionFormat": "source_sentence_schema_v1",
+  "maxExtractionAttempts": 2,
+  "maxExtractedRecords": 4,
+  "queryPlanFormat": "grounded_schema_v1",
+  "actionContextRevision": "self_identity_utc_v1",
+  "archiveRevision": "visible_message_cosine_observed_time_v1"
+}

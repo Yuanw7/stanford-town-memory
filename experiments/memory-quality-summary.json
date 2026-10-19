@@ -1,0 +1,471 @@
+{
+  "measuredAt": "2026-10-15T05:51:50.677Z",
+  "diagnosticOnly": true,
+  "formalQualityAccepted": false,
+  "qaRun": "artifacts/local/memory-comparison/2026-10-15T05-40-24-861Z-19941229",
+  "taskRun": "artifacts/local/commitment-actions/2026-10-15T05-43-17-711Z-3a80d7c4",
+  "probeRun": "artifacts/local/memory-failure-probe/2026-10-15T05-50-24-593Z-05f40a62",
+  "questionCount": 10,
+  "repetitions": 3,
+  "qaByVariant": {
+    "baseline": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 27,
+      "accuracy": 0.9,
+      "missing": 0,
+      "contradictions": {
+        "expectedAnnotated": 18,
+        "assessed": 18,
+        "confirmed": 3,
+        "unassessed": 0,
+        "rateAmongAssessed": 0.16666666666666666,
+        "lowerBoundRate": 0.16666666666666666
+      },
+      "unanswerable": {
+        "expected": 6,
+        "unsupportedValidAnswers": 0
+      },
+      "byCategory": {
+        "fact": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "update": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "missing": 0
+        },
+        "relationship": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "commitment": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "unanswerable": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        }
+      },
+      "byRepetition": [
+        {
+          "repetition": 1,
+          "expected": 10,
+          "observed": 10,
+          "correct": 9,
+          "accuracy": 0.9,
+          "missing": 0
+        },
+        {
+          "repetition": 2,
+          "expected": 10,
+          "observed": 10,
+          "correct": 9,
+          "accuracy": 0.9,
+          "missing": 0
+        },
+        {
+          "repetition": 3,
+          "expected": 10,
+          "observed": 10,
+          "correct": 9,
+          "accuracy": 0.9,
+          "missing": 0
+        }
+      ]
+    },
+    "budget_512": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 27,
+      "accuracy": 0.9,
+      "missing": 0,
+      "contradictions": {
+        "expectedAnnotated": 18,
+        "assessed": 18,
+        "confirmed": 3,
+        "unassessed": 0,
+        "rateAmongAssessed": 0.16666666666666666,
+        "lowerBoundRate": 0.16666666666666666
+      },
+      "unanswerable": {
+        "expected": 6,
+        "unsupportedValidAnswers": 0
+      },
+      "byCategory": {
+        "fact": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "update": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "missing": 0
+        },
+        "relationship": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "commitment": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "unanswerable": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        }
+      },
+      "byRepetition": [
+        {
+          "repetition": 1,
+          "expected": 10,
+          "observed": 10,
+          "correct": 9,
+          "accuracy": 0.9,
+          "missing": 0
+        },
+        {
+          "repetition": 2,
+          "expected": 10,
+          "observed": 10,
+          "correct": 9,
+          "accuracy": 0.9,
+          "missing": 0
+        },
+        {
+          "repetition": 3,
+          "expected": 10,
+          "observed": 10,
+          "correct": 9,
+          "accuracy": 0.9,
+          "missing": 0
+        }
+      ]
+    },
+    "budget_128_stress": {
+      "expected": 30,
+      "observed": 30,
+      "correct": 12,
+      "accuracy": 0.4,
+      "missing": 0,
+      "contradictions": {
+        "expectedAnnotated": 18,
+        "assessed": 18,
+        "confirmed": 0,
+        "unassessed": 0,
+        "rateAmongAssessed": 0,
+        "lowerBoundRate": 0
+      },
+      "unanswerable": {
+        "expected": 6,
+        "unsupportedValidAnswers": 0
+      },
+      "byCategory": {
+        "fact": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 0,
+          "accuracy": 0,
+          "missing": 0
+        },
+        "update": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 0,
+          "accuracy": 0,
+          "missing": 0
+        },
+        "relationship": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        },
+        "commitment": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 0,
+          "accuracy": 0,
+          "missing": 0
+        },
+        "unanswerable": {
+          "expected": 6,
+          "observed": 6,
+          "correct": 6,
+          "accuracy": 1,
+          "missing": 0
+        }
+      },
+      "byRepetition": [
+        {
+          "repetition": 1,
+          "expected": 10,
+          "observed": 10,
+          "correct": 4,
+          "accuracy": 0.4,
+          "missing": 0
+        },
+        {
+          "repetition": 2,
+          "expected": 10,
+          "observed": 10,
+          "correct": 4,
+          "accuracy": 0.4,
+          "missing": 0
+        },
+        {
+          "repetition": 3,
+          "expected": 10,
+          "observed": 10,
+          "correct": 4,
+          "accuracy": 0.4,
+          "missing": 0
+        }
+      ]
+    }
+  },
+  "queryInputReductionRate": {
+    "baseline": 0,
+    "budget_512": 0,
+    "budget_128_stress": 0.5944369672498878
+  },
+  "taskSummary": {
+    "diagnosticOnly": true,
+    "sourceSnapshots": [
+      {
+        "repetition": 1,
+        "sha256": "4111f8455f52ccb4a7eca3a9461534e533a7b668cd9b447a2c8f0bd67bc43bce"
+      },
+      {
+        "repetition": 2,
+        "sha256": "80d85e8d5e30c5194badbb56d4633a1c09d0ca88a87f9185231ee1953eee75c4"
+      },
+      {
+        "repetition": 3,
+        "sha256": "cf8b8234616a268c743307ce78d7d0161bb784b13f86c50760e81348cbe0cd61"
+      }
+    ],
+    "attempts": 18,
+    "allGatewayScopeAndUsageMatched": true,
+    "actorGoalIsNotInjected": true,
+    "byVariant": {
+      "baseline": {
+        "episodes": 3,
+        "due": 3,
+        "completed": 3,
+        "completionRate": 1,
+        "invalidActions": 0
+      },
+      "budget_512": {
+        "episodes": 3,
+        "due": 3,
+        "completed": 3,
+        "completionRate": 1,
+        "invalidActions": 0
+      },
+      "budget_128_stress": {
+        "episodes": 3,
+        "due": 3,
+        "completed": 0,
+        "completionRate": 0,
+        "invalidActions": 0
+      }
+    },
+    "limitation": "Single-step synthetic delivery simulator on prebuilt parent memories, not AI Town online task completion. Parent maintenance cost excluded here; input fixture not human-reviewed."
+  },
+  "taskActions": [
+    {
+      "repetition": 1,
+      "strategy": "baseline",
+      "actionStatus": "delivered",
+      "completed": 1,
+      "selectedIds": [
+        "conversation:quality-promise",
+        "conversation:quality-old",
+        "conversation:quality-update"
+      ]
+    },
+    {
+      "repetition": 1,
+      "strategy": "budget_512",
+      "actionStatus": "delivered",
+      "completed": 1,
+      "selectedIds": [
+        "conversation:quality-promise",
+        "conversation:quality-old",
+        "conversation:quality-update"
+      ]
+    },
+    {
+      "repetition": 1,
+      "strategy": "budget_128_stress",
+      "actionStatus": "waited",
+      "completed": 0,
+      "selectedIds": [
+        "conversation:quality-old"
+      ]
+    },
+    {
+      "repetition": 2,
+      "strategy": "baseline",
+      "actionStatus": "delivered",
+      "completed": 1,
+      "selectedIds": [
+        "conversation:quality-promise",
+        "conversation:quality-old",
+        "conversation:quality-update"
+      ]
+    },
+    {
+      "repetition": 2,
+      "strategy": "budget_512",
+      "actionStatus": "delivered",
+      "completed": 1,
+      "selectedIds": [
+        "conversation:quality-promise",
+        "conversation:quality-old",
+        "conversation:quality-update"
+      ]
+    },
+    {
+      "repetition": 2,
+      "strategy": "budget_128_stress",
+      "actionStatus": "waited",
+      "completed": 0,
+      "selectedIds": [
+        "conversation:quality-old"
+      ]
+    },
+    {
+      "repetition": 3,
+      "strategy": "baseline",
+      "actionStatus": "delivered",
+      "completed": 1,
+      "selectedIds": [
+        "conversation:quality-promise",
+        "conversation:quality-old",
+        "conversation:quality-update"
+      ]
+    },
+    {
+      "repetition": 3,
+      "strategy": "budget_512",
+      "actionStatus": "delivered",
+      "completed": 1,
+      "selectedIds": [
+        "conversation:quality-promise",
+        "conversation:quality-old",
+        "conversation:quality-update"
+      ]
+    },
+    {
+      "repetition": 3,
+      "strategy": "budget_128_stress",
+      "actionStatus": "waited",
+      "completed": 0,
+      "selectedIds": [
+        "conversation:quality-old"
+      ]
+    }
+  ],
+  "failureDiagnosis": {
+    "queryId": "quality-history-1",
+    "baselineSelectedIds": [
+      "conversation:quality-update",
+      "conversation:quality-promise",
+      "conversation:quality-old"
+    ],
+    "probeEvaluation": {
+      "diagnosticOnly": true,
+      "queryId": "quality-history-1",
+      "results": [
+        {
+          "caseId": "original_summary_prompt",
+          "response": "{\"answer\":\"10:00\"}",
+          "correct": false,
+          "valid": true,
+          "answer": "10:00",
+          "reason": null
+        },
+        {
+          "caseId": "all_visible_raw_messages",
+          "response": "{\"answer\":\"09:00\"}",
+          "correct": true,
+          "valid": true,
+          "answer": "09:00",
+          "reason": null
+        },
+        {
+          "caseId": "selected_raw_event_only",
+          "response": "{\"answer\":\"09:00\"}",
+          "correct": true,
+          "valid": true,
+          "answer": "09:00",
+          "reason": null
+        }
+      ],
+      "limitation": "Source-directed probe only; not evidence of memory optimization."
+    },
+    "interpretation": "Original summary prompt returned current time for a historical question; full raw evidence and a selected raw message returned the historical time. Supports investigating representation/context effects; does not uniquely identify a cause."
+  },
+  "callsByRun": [
+    {
+      "run": "artifacts/local/memory-comparison/2026-10-15T05-40-24-861Z-19941229",
+      "attempts": 234,
+      "sha256": "14d1ba5df3fa43228417a1b4aeda9c616cd0a4ad47b2dd44ef0a1d9ad9ce5cbe"
+    },
+    {
+      "run": "artifacts/local/commitment-actions/2026-10-15T05-43-17-711Z-3a80d7c4",
+      "attempts": 18,
+      "sha256": "0c048f50e1aa100691cfc6e147e72c0c1b884f004835dc115a8cfed1651ce7ea"
+    },
+    {
+      "run": "artifacts/local/memory-failure-probe/2026-10-15T05-50-24-593Z-05f40a62",
+      "attempts": 3,
+      "sha256": "dc93ba724fc9482b11d6192cd8343b439422c62a918640ff1ded2691f9780ab8"
+    }
+  ],
+  "findings": [
+    "Baseline and budget-512 answered 90%; historical question failed in each repeat.",
+    "128-token stress input reduced about 59.44%, but accuracy fell to 40% and simulated completion to 0/3. Not a qualifying optimization.",
+    "Zero confirmed contradictions in stress reflects abstention; do not select by contradiction count alone."
+  ],
+  "limitations": [
+    "Synthetic development data, not human reviewed",
+    "One simulated accepted delivery task repeated, not independent online task trials",
+    "Parent maintenance shared and excluded from action probe costs",
+    "Exact counteranswer contradiction annotations cover only a subset; report assessed count",
+    "128 is a boundary diagnostic outside the formal sweep; full P4/P5 incomplete"
+  ]
+}

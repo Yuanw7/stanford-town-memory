@@ -1,0 +1,190 @@
+{
+  "measuredAt": "2026-10-15T02:35:09.940Z",
+  "diagnosticOnly": true,
+  "runs": [
+    {
+      "run": "artifacts/local/memory-write-smoke/2026-10-15T02-31-57-132Z-928165c8",
+      "status": "failed",
+      "error": "output_truncated",
+      "startedAt": "2026-10-15T02:31:57.132Z",
+      "endedAt": "2026-10-15T02:32:35.855Z",
+      "scriptSha256": "95d5eed7b3dd8fe64c1ef24cecfcefaa8e0e71b8003f9c69e823323638c26a3c",
+      "config": {
+        "mode": "diagnostic_memory_write",
+        "host": "http://127.0.0.1:11435",
+        "model": "town-qwen",
+        "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+        "embeddingModel": "mxbai-embed-large",
+        "embeddingDigest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+        "embeddingDimensions": 1024,
+        "contextWindowTokens": 8192,
+        "maxInputTokens": 6500,
+        "maxOutputTokens": 512,
+        "maxTotalCalls": 40,
+        "wallTimeLimitSeconds": 900,
+        "temperature": 0,
+        "seed": 42,
+        "dataset": {
+          "path": "experiments/datasets/conversation-v2.development.json",
+          "sha256": "fd96b134f270e9c6e355fdaa8a9eae1fb877909f2f27a218d83b7196e4a53b01"
+        },
+        "adaptations": [
+          "Qwen raw ChatML with exact tokenizer calibration",
+          "UTC ISO time instead of host locale",
+          "Serial calls and bounded output; reflection max 512 tokens",
+          "Strict reflection source/schema validation",
+          "Independent local JSON transaction store; no Convex writes"
+        ],
+        "reflectionFixture": {
+          "count": 60,
+          "importance": 9,
+          "origin": "synthetic controlled seed; not model-produced conversation memories"
+        }
+      },
+      "writeChecks": {
+        "passed": true,
+        "memories": [
+          {
+            "scope": {
+              "experimentId": "2026-10-15T02-31-57-132Z-928165c8",
+              "worldId": "development-v2",
+              "agentId": "nora"
+            },
+            "count": 1
+          },
+          {
+            "scope": {
+              "experimentId": "2026-10-15T02-31-57-132Z-928165c8",
+              "worldId": "development-v2",
+              "agentId": "ivo"
+            },
+            "count": 1
+          }
+        ],
+        "snapshotRestored": true,
+        "retryAdditionalAttempts": 0
+      },
+      "summary": null,
+      "attempts": 7,
+      "measuredAttempts": 7,
+      "outputTruncations": [
+        {
+          "purpose": "reflection",
+          "outputTokens": 512,
+          "logicalCallId": "f30ed987-c3be-4d82-9be4-915255bced50"
+        }
+      ]
+    },
+    {
+      "run": "artifacts/local/memory-write-smoke/2026-10-15T02-33-38-925Z-2337eaa8",
+      "status": "completed",
+      "error": null,
+      "startedAt": "2026-10-15T02:33:38.926Z",
+      "endedAt": "2026-10-15T02:34:10.978Z",
+      "scriptSha256": "f60c25b5f905f6f06e6ba82254442e574324622dd7148bb7edca18c7581f8ee0",
+      "config": {
+        "mode": "diagnostic_memory_write",
+        "host": "http://127.0.0.1:11435",
+        "model": "town-qwen",
+        "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+        "embeddingModel": "mxbai-embed-large",
+        "embeddingDigest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+        "embeddingDimensions": 1024,
+        "contextWindowTokens": 8192,
+        "maxInputTokens": 6500,
+        "maxOutputTokens": 1024,
+        "maxTotalCalls": 40,
+        "wallTimeLimitSeconds": 900,
+        "temperature": 0,
+        "seed": 42,
+        "dataset": {
+          "path": "experiments/datasets/conversation-v2.development.json",
+          "sha256": "fd96b134f270e9c6e355fdaa8a9eae1fb877909f2f27a218d83b7196e4a53b01"
+        },
+        "adaptations": [
+          "Qwen raw ChatML with exact tokenizer calibration",
+          "UTC ISO time instead of host locale",
+          "Serial calls and bounded output; reflection max 1024 tokens",
+          "Strict reflection source/schema validation",
+          "Independent local JSON transaction store; no Convex writes"
+        ],
+        "reflectionFixture": {
+          "count": 60,
+          "importance": 9,
+          "origin": "synthetic controlled seed; not model-produced conversation memories"
+        },
+        "comparison": {
+          "referenceRun": "artifacts/local/memory-write-smoke/2026-10-15T02-31-57-132Z-928165c8",
+          "changedVariable": "reflection output cap 512 -> 1024",
+          "reason": "Preserved failure: lengthy statementIds JSON was output-truncated"
+        }
+      },
+      "writeChecks": {
+        "passed": true,
+        "memories": [
+          {
+            "scope": {
+              "experimentId": "2026-10-15T02-33-38-925Z-2337eaa8",
+              "worldId": "development-v2",
+              "agentId": "nora"
+            },
+            "count": 1
+          },
+          {
+            "scope": {
+              "experimentId": "2026-10-15T02-33-38-925Z-2337eaa8",
+              "worldId": "development-v2",
+              "agentId": "ivo"
+            },
+            "count": 1
+          }
+        ],
+        "snapshotRestored": true,
+        "retryAdditionalAttempts": 0
+      },
+      "summary": {
+        "diagnosticOnly": true,
+        "passed": true,
+        "conversationMemories": 2,
+        "snapshotRestored": true,
+        "retryAdditionalAttempts": 0,
+        "reflectionThresholdSum": 540,
+        "reflectionMemories": 3,
+        "attempts": 13,
+        "allGatewayScopeAndUsageMatched": true,
+        "purposes": [
+          "summary",
+          "importance",
+          "memory_embedding",
+          "reflection",
+          "reflection_importance",
+          "reflection_embedding"
+        ],
+        "generationInputTokens": 2292,
+        "generationOutputTokens": 780,
+        "embeddingInputTokens": 265,
+        "adaptations": [
+          "Qwen raw ChatML with exact tokenizer calibration",
+          "UTC ISO time instead of host locale",
+          "Serial calls and bounded output; reflection max 1024 tokens",
+          "Strict reflection source/schema validation",
+          "Independent local JSON transaction store; no Convex writes"
+        ],
+        "pending": [
+          "上游 Convex 实际反思路径集成验证",
+          "完整 baseline 检索与在线行为等价验证",
+          "人工审核及正式策略质量/成本对照"
+        ]
+      },
+      "attempts": 13,
+      "measuredAttempts": 13,
+      "outputTruncations": []
+    }
+  ],
+  "conclusion": "512-token reflection output truncated; 1024-token bounded rerun completed. Not a full upstream baseline or memory optimization comparison.",
+  "pending": [
+    "Upstream Convex reflection integration",
+    "Full baseline retrieval and online parity",
+    "Independent human dataset review and formal strategy comparison"
+  ]
+}

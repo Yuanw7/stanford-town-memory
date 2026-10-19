@@ -1,0 +1,34 @@
+[
+  {
+    "id": "late-history",
+    "acceptedAnswers": [
+      "08:00",
+      "8:00"
+    ],
+    "sourceEventIds": [
+      "late-correction-m1",
+      "late-correction-m2"
+    ],
+    "contradictionAnswers": [
+      "09:00",
+      "9:00",
+      "10:00"
+    ]
+  },
+  {
+    "id": "late-current",
+    "acceptedAnswers": [
+      "10:00"
+    ],
+    "sourceEventIds": [
+      "late-correction-m1",
+      "late-correction-m2"
+    ],
+    "contradictionAnswers": [
+      "09:00",
+      "9:00",
+      "08:00",
+      "8:00"
+    ]
+  }
+]

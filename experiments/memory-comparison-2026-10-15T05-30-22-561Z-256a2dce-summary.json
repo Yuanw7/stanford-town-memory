@@ -1,0 +1,636 @@
+{
+  "measuredAt": "2026-10-15T05:35:39.771Z",
+  "run": "artifacts/local/memory-comparison/2026-10-15T05-30-22-561Z-256a2dce",
+  "diagnosticOnly": true,
+  "status": "completed",
+  "distinctQuestions": 4,
+  "summary": {
+    "diagnosticOnly": true,
+    "comparisonScope": "retrieval-only; maintenance rebuilt per repetition and shared between query variants",
+    "conversationsPerRepetition": 3,
+    "independentQuestions": 4,
+    "repetitions": 3,
+    "expectedAnswers": 36,
+    "observedAnswers": 36,
+    "attempts": 126,
+    "allGatewayScopeAndUsageMatched": true,
+    "byVariant": {
+      "baseline": {
+        "observedAnswers": 12,
+        "inputTokens": 5262,
+        "budgetExclusions": 0
+      },
+      "budget_1024": {
+        "observedAnswers": 12,
+        "inputTokens": 5262,
+        "budgetExclusions": 0
+      },
+      "budget_512": {
+        "observedAnswers": 12,
+        "inputTokens": 4272,
+        "budgetExclusions": 6
+      }
+    }
+  },
+  "evaluation": {
+    "diagnosticOnly": true,
+    "runCompleted": true,
+    "independentQuestions": 4,
+    "repetitions": 3,
+    "byVariant": {
+      "baseline": {
+        "expected": 12,
+        "observed": 12,
+        "correct": 12,
+        "accuracy": 1,
+        "missing": 0,
+        "byCategory": {
+          "relationship": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          },
+          {
+            "repetition": 2,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          },
+          {
+            "repetition": 3,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          }
+        ]
+      },
+      "budget_1024": {
+        "expected": 12,
+        "observed": 12,
+        "correct": 12,
+        "accuracy": 1,
+        "missing": 0,
+        "byCategory": {
+          "relationship": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          },
+          {
+            "repetition": 2,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          },
+          {
+            "repetition": 3,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          }
+        ]
+      },
+      "budget_512": {
+        "expected": 12,
+        "observed": 12,
+        "correct": 12,
+        "accuracy": 1,
+        "missing": 0,
+        "byCategory": {
+          "relationship": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 6,
+            "observed": 6,
+            "correct": 6,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          },
+          {
+            "repetition": 2,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          },
+          {
+            "repetition": 3,
+            "expected": 4,
+            "observed": 4,
+            "correct": 4,
+            "accuracy": 1,
+            "missing": 0
+          }
+        ]
+      }
+    },
+    "rows": [
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_1024",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_1024",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_1024",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_1024",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "budget_512",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_1024",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_1024",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_1024",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_512",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "budget_1024",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 2,
+        "strategy": "baseline",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_1024",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "real-latest-contact-a",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Stella",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_1024",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "real-latest-contact-b",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Lucky",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_1024",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "real-unknown-a",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "baseline",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_1024",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      },
+      {
+        "repetition": 3,
+        "strategy": "budget_512",
+        "queryId": "real-unknown-b",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null
+      }
+    ],
+    "complete": true,
+    "formalQualityAccepted": false,
+    "limitation": "Development exact-answer QA only; no human review, contradiction or actual commitment-completion gate.",
+    "answersSha256": "a982293da9fb57cd911fe68f8fe721b2477aa241c4da60a0609d9501bb8d55cf"
+  },
+  "sharedMaintenance": {
+    "attempts": 54,
+    "failures": 0,
+    "unknownUsageAttempts": 0,
+    "generation": {
+      "attempts": 36,
+      "inputTokens": 13482,
+      "outputTokens": 2358
+    },
+    "embedding": {
+      "attempts": 18,
+      "inputTokens": 2757,
+      "outputTokens": null,
+      "outputUsageReason": "no embedding completion-token field"
+    }
+  },
+  "queryCostsByVariant": {
+    "baseline": {
+      "attempts": 24,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "generation": {
+        "attempts": 12,
+        "inputTokens": 5262,
+        "outputTokens": 78
+      },
+      "embedding": {
+        "attempts": 12,
+        "inputTokens": 120,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "budget_1024": {
+      "attempts": 24,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "generation": {
+        "attempts": 12,
+        "inputTokens": 5262,
+        "outputTokens": 78
+      },
+      "embedding": {
+        "attempts": 12,
+        "inputTokens": 120,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "budget_512": {
+      "attempts": 24,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "generation": {
+        "attempts": 12,
+        "inputTokens": 4272,
+        "outputTokens": 78
+      },
+      "embedding": {
+        "attempts": 12,
+        "inputTokens": 120,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "queryInputReductionRate": {
+    "baseline": 0,
+    "budget_1024": 0,
+    "budget_512": 0.18814139110604333
+  },
+  "callsSha256": "a418f4ca22cef3ca9f3b67b29f11414ae4e12429c3b86fb07e9709a76554e04e",
+  "evaluationSha256": "b76c96836cc49126a214a1cef5842380e3ece9ec9110d80b22863caa7969d474",
+  "analysisScriptSha256": "3bf62aa6a04b015cb9547f3f872b923a75a986032ad03ab08fc0761eb9ff4f5a",
+  "limitations": [
+    "Shared maintenance; retrieval-only comparison, not independent end-to-end costs",
+    "Distinct question IDs share a history; not independent statistical samples",
+    "Development data uses marked engine-count differences and stale control markers",
+    "No human review, full quality gates, Convex parity, or tiered-memory results"
+  ]
+}

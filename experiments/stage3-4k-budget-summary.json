@@ -1,0 +1,8 @@
+{
+  "run": "artifacts/local/replay/2026-10-14T09-22-13-177Z-4a570e3d",
+  "status": "failed",
+  "error": "input_budget_exceeded:acceptance-fact-01；未截断或发送",
+  "modelAttempts": 0,
+  "expectedBudgetRejection": true,
+  "classification": "capacity_diagnostic_not_memory_optimization"
+}

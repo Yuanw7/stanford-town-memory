@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "retainedMemories": 25,
+  "worldId": "m17c0q150w8jm9p2skehv7x9y18g9b39",
+  "agentCount": 5,
+  "method": "docker compose restart backend; verify immutable memory rows and embeddings"
+}

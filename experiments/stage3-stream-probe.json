@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "native": [
+    {
+      "logicalCallId": "c65babb0-12ff-4504-bb56-bb6a97765249",
+      "attempt": 1,
+      "experimentId": "p3-stream-probe",
+      "worldId": "diagnostic",
+      "agentId": "probe",
+      "purpose": "native_stream",
+      "endpoint": "/api/generate",
+      "model": "town-qwen",
+      "startedAt": "2026-10-14T09:02:28.818Z",
+      "status": "succeeded",
+      "inputTokens": 13,
+      "outputTokens": 3,
+      "usageStatus": "measured",
+      "queueMs": null,
+      "inferenceMs": 324.921458,
+      "loadMs": 2.499042,
+      "promptEvalMs": 102.158,
+      "generationMs": 88.912,
+      "doneReason": "stop",
+      "endToEndMs": 364.253083
+    }
+  ],
+  "sseDone": true,
+  "sseUsagePresent": true
+}

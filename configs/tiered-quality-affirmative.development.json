@@ -1,0 +1,60 @@
+{
+  "mode": "diagnostic_policy_comparison",
+  "host": "http://127.0.0.1:11435",
+  "model": "town-qwen",
+  "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+  "embeddingModel": "mxbai-embed-large",
+  "embeddingDigest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+  "embeddingDimensions": 1024,
+  "contextWindowTokens": 8192,
+  "maxInputTokens": 6500,
+  "maxOutputTokens": 1024,
+  "maxTotalCalls": 180,
+  "wallTimeLimitSeconds": 1200,
+  "temperature": 0,
+  "seed": 42,
+  "dataset": {
+    "path": "experiments/datasets/memory-quality.development.json",
+    "sha256": "45de59f8eecf61dfd487e7161ef2e961daa3e7fa19e40efcb57abf6c2cfe95da"
+  },
+  "adaptations": [
+    "Qwen raw ChatML with exact tokenizer calibration",
+    "UTC ISO time instead of host locale",
+    "Serial calls and bounded output; reflection max 1024 tokens",
+    "Strict reflection source/schema validation",
+    "Independent local JSON transaction store; no Convex writes",
+    "Exact cosine over local scoped vectors instead of Convex vector search",
+    "Explicit logical clock; latest-100 by logical creation and insertion order",
+    "Read-only comparison probes; separate mutable touch probe",
+    "Independent maintenance per policy; schema-constrained tiered extraction with strict post-validation"
+  ],
+  "repetitions": 1,
+  "queryOutputTokens": 128,
+  "variants": [
+    {
+      "id": "tiered_512",
+      "policy": "tiered_memory",
+      "memoryBudgetTokens": 512
+    },
+    {
+      "id": "baseline",
+      "policy": "baseline"
+    }
+  ],
+  "diagnosticNotes": [
+    "Minimal tiered archive/dated-facts/explicit-delivery-commitment prototype",
+    "Independent maintenance; query planning and extraction counted",
+    "Single development repeat first; full repeated matrix pending",
+    "Only exact source quotes checked; semantic entailment not guaranteed",
+    "At most one source/schema repair per conversation; failed completed outputs fully metered; timeouts not repaired",
+    "Fact values constrained to sentences from current visible messages; full quoted evidence, potentially higher context cost",
+    "Coupled source/value/quote branches; each fact cites exactly one verbatim supporting message"
+  ],
+  "actionFixture": {
+    "path": "experiments/datasets/commitment-action.development.json",
+    "sha256": "c790798f7a321843c5574de5ad31c15f596bcb475464d68dd68b6d0573ac74b8"
+  },
+  "extractionRevision": "source_only_v7_affirmative_delivery",
+  "extractionFormat": "source_sentence_schema_v1",
+  "maxExtractionAttempts": 2
+}

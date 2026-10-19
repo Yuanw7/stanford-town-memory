@@ -1,0 +1,41 @@
+{
+  "diagnosticOnly": true,
+  "attempts": 12,
+  "allGatewayScopeAndUsageMatched": true,
+  "results": [
+    {
+      "format": "original",
+      "strategy": "tiered_512",
+      "expected": 3,
+      "observed": 3,
+      "completed": 0,
+      "invalidActions": 0
+    },
+    {
+      "format": "original",
+      "strategy": "baseline",
+      "expected": 3,
+      "observed": 3,
+      "completed": 3,
+      "invalidActions": 0
+    },
+    {
+      "format": "self_identity_utc",
+      "strategy": "tiered_512",
+      "expected": 3,
+      "observed": 3,
+      "completed": 3,
+      "invalidActions": 0
+    },
+    {
+      "format": "self_identity_utc",
+      "strategy": "baseline",
+      "expected": 3,
+      "observed": 3,
+      "completed": 3,
+      "invalidActions": 0
+    }
+  ],
+  "limitation": "Identity and readable UTC changed together; fixed selected parent memories, one repeated synthetic task; no policy savings or causal uniqueness claim",
+  "run": "artifacts/local/action-context-probe/2026-10-15T07-09-46-485Z-a27e97ae"
+}

@@ -1,0 +1,56 @@
+{
+  "mode": "diagnostic_policy_comparison",
+  "host": "http://127.0.0.1:11435",
+  "model": "town-qwen",
+  "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+  "embeddingModel": "mxbai-embed-large",
+  "embeddingDigest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+  "embeddingDimensions": 1024,
+  "contextWindowTokens": 8192,
+  "maxInputTokens": 6500,
+  "maxOutputTokens": 1024,
+  "maxTotalCalls": 80,
+  "wallTimeLimitSeconds": 600,
+  "temperature": 0,
+  "seed": 42,
+  "dataset": {
+    "path": "experiments/datasets/archive-late-correction.development.json",
+    "sha256": "f0b7b9f3206dd90870a672d568178730d1d26a52c3b48569cf41d1359cb8a707"
+  },
+  "adaptations": [
+    "Qwen raw ChatML with exact tokenizer calibration",
+    "UTC ISO time instead of host locale",
+    "Serial calls and bounded output; reflection max 1024 tokens",
+    "Strict reflection source/schema validation",
+    "Independent local JSON transaction store; no Convex writes",
+    "Exact cosine over local scoped vectors instead of Convex vector search",
+    "Explicit logical clock; latest-100 by logical creation and insertion order",
+    "Read-only comparison probes; separate mutable touch probe",
+    "Independent maintenance per policy; schema-constrained tiered extraction with strict post-validation"
+  ],
+  "repetitions": 1,
+  "queryOutputTokens": 128,
+  "variants": [
+    {
+      "id": "baseline",
+      "policy": "baseline"
+    },
+    {
+      "id": "archive_512",
+      "policy": "archive_retrieval",
+      "memoryBudgetTokens": 512
+    }
+  ],
+  "diagnosticNotes": [
+    "Negative boundary probe: late correction of a past fact",
+    "Observation-time cutoff can hide later corrective evidence; no formal acceptance or cost optimization claim",
+    "Frozen before this probe; answers remain outside model inputs"
+  ],
+  "extractionRevision": "source_only_v9_capped_grounded_plan",
+  "extractionFormat": "source_sentence_schema_v1",
+  "maxExtractionAttempts": 2,
+  "maxExtractedRecords": 4,
+  "queryPlanFormat": "grounded_schema_v1",
+  "actionContextRevision": "self_identity_utc_v1",
+  "archiveRevision": "visible_message_cosine_observed_time_v1"
+}

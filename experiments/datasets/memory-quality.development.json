@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "kind": "memory_development",
+  "conversations": [
+    {
+      "schemaVersion": 2,
+      "type": "conversation",
+      "id": "quality-old",
+      "worldId": "quality-development-v1",
+      "createdAtMs": 1793520000000,
+      "participants": [
+        {
+          "agentId": "rowan",
+          "name": "Rowan"
+        },
+        {
+          "agentId": "iris",
+          "name": "Iris"
+        }
+      ],
+      "observedBy": [
+        "rowan",
+        "iris"
+      ],
+      "messages": [
+        {
+          "id": "quality-old-m1",
+          "authorAgentId": "rowan",
+          "text": "Today, November 1, 2026, Riverside Cafe opens at 09:00. Iris is my project partner, not my supervisor.",
+          "atMs": 1793520001000
+        },
+        {
+          "id": "quality-old-m2",
+          "authorAgentId": "iris",
+          "text": "Confirmed: I am your project partner and not your supervisor.",
+          "atMs": 1793520002000
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
+      "type": "conversation",
+      "id": "quality-update",
+      "worldId": "quality-development-v1",
+      "createdAtMs": 1793606400000,
+      "participants": [
+        {
+          "agentId": "rowan",
+          "name": "Rowan"
+        },
+        {
+          "agentId": "iris",
+          "name": "Iris"
+        }
+      ],
+      "observedBy": [
+        "rowan",
+        "iris"
+      ],
+      "messages": [
+        {
+          "id": "quality-update-m1",
+          "authorAgentId": "iris",
+          "text": "Update for November 2, 2026: Riverside Cafe now opens at 10:00. The previous opening time on November 1 was 09:00.",
+          "atMs": 1793606401000
+        },
+        {
+          "id": "quality-update-m2",
+          "authorAgentId": "rowan",
+          "text": "I understand: the current opening time is 10:00, while November 1 was 09:00.",
+          "atMs": 1793606402000
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
+      "type": "conversation",
+      "id": "quality-promise",
+      "worldId": "quality-development-v1",
+      "createdAtMs": 1793608200000,
+      "participants": [
+        {
+          "agentId": "rowan",
+          "name": "Rowan"
+        },
+        {
+          "agentId": "iris",
+          "name": "Iris"
+        }
+      ],
+      "observedBy": [
+        "rowan",
+        "iris"
+      ],
+      "messages": [
+        {
+          "id": "quality-promise-m1",
+          "authorAgentId": "iris",
+          "text": "Please deliver my blue notebook to me, Iris, by 10:00 today, November 2, 2026. Do not deliver the red diary.",
+          "atMs": 1793608201000
+        },
+        {
+          "id": "quality-promise-m2",
+          "authorAgentId": "rowan",
+          "text": "I accept. I will deliver the blue notebook to Iris by 10:00 today. The red diary must not be delivered.",
+          "atMs": 1793608202000
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "id": "quality-fact-1",
+      "category": "fact",
+      "text": "What color is the notebook I promised to deliver? Answer only the color.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000000
+    },
+    {
+      "id": "quality-fact-2",
+      "category": "fact",
+      "text": "Is the red diary allowed to be delivered? Answer yes or no.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000001
+    },
+    {
+      "id": "quality-update-1",
+      "category": "update",
+      "text": "What is Riverside Cafe's current opening time on November 2, 2026? Answer HH:MM only.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000002
+    },
+    {
+      "id": "quality-history-1",
+      "category": "update",
+      "text": "What was Riverside Cafe's opening time on November 1, 2026? Answer HH:MM only.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000003
+    },
+    {
+      "id": "quality-relationship-1",
+      "category": "relationship",
+      "text": "Who is my project partner? Answer only the name.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000004
+    },
+    {
+      "id": "quality-relationship-2",
+      "category": "relationship",
+      "text": "Is Iris my supervisor? Answer yes or no.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000005
+    },
+    {
+      "id": "quality-commitment-1",
+      "category": "commitment",
+      "text": "By what time did I promise to deliver the notebook today? Answer HH:MM only.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000006
+    },
+    {
+      "id": "quality-commitment-2",
+      "category": "commitment",
+      "text": "To whom did I promise to deliver the notebook? Answer only the name.",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000007
+    },
+    {
+      "id": "quality-unknown-1",
+      "category": "unanswerable",
+      "text": "What is my bank account PIN?",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000008
+    },
+    {
+      "id": "quality-unknown-2",
+      "category": "unanswerable",
+      "text": "What is Iris's favorite food?",
+      "worldId": "quality-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000009
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "experimentId": "memory-pilot-001",
+  "mode": "fixed_workload",
+  "population": 5,
+  "repetitions": 3,
+  "seed": 42,
+  "versions": {
+    "aiTownCommit": "UNSET",
+    "researchCommit": "UNSET",
+    "convexImageDigest": "UNSET",
+    "ollamaVersion": "UNSET"
+  },
+  "dataset": {
+    "path": "experiments/datasets/local/pilot.jsonl",
+    "checksum": "UNSET"
+  },
+  "initialState": {
+    "path": "experiments/datasets/local/initial-state.json",
+    "checksum": "UNSET"
+  },
+  "models": {
+    "chat": {
+      "name": "town-qwen",
+      "base": "qwen2.5:7b",
+      "digest": "UNSET"
+    },
+    "embedding": {
+      "name": "mxbai-embed-large",
+      "digest": "UNSET",
+      "dimensions": 1024
+    }
+  },
+  "budgets": {
+    "contextWindowTokens": 8192,
+    "maxInputTokens": 6500,
+    "maxOutputTokens": 512,
+    "memoryTokens": 1200,
+    "maxModelConcurrency": 1,
+    "maxTotalCalls": 1000,
+    "wallTimeLimitSeconds": 1800
+  },
+  "variants": [
+    "baseline",
+    "budgeted_retrieval",
+    "tiered_memory"
+  ],
+  "memory": {
+    "maxRetrievedItems": 5,
+    "recentItemLimit": 50,
+    "preservePendingCommitments": true,
+    "retainRawEvents": true
+  },
+  "qualityGates": {
+    "maxRecallDropPercentagePoints": 5,
+    "maxContradictionIncreasePercentagePoints": 2,
+    "maxCommitmentDropPercentagePoints": 5
+  },
+  "sweep": {
+    "contextWindows": [
+      8192,
+      4096
+    ],
+    "memoryBudgets": {
+      "8192": [
+        512,
+        1024,
+        2048,
+        4096
+      ],
+      "4096": [
+        512,
+        1024,
+        2048
+      ]
+    },
+    "historyEventCounts": [
+      100,
+      1000
+    ],
+    "queriesPerHistory": 50
+  }
+}

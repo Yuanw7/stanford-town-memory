@@ -1,0 +1,214 @@
+{
+  "measuredAt": "2026-10-15T05:13:27.103Z",
+  "run": "artifacts/local/baseline-lifecycle/2026-10-15T05-11-46-682Z-808e1dc0",
+  "status": "completed",
+  "summary": {
+    "diagnosticOnly": true,
+    "passed": true,
+    "attempts": 18,
+    "restoredTouchAndSnapshot": true,
+    "replayAdditionalAttempts": 0,
+    "conversationMemories": 2,
+    "reflections": 3,
+    "results": [
+      {
+        "strategy": "upstream_top_k",
+        "selectedIds": [
+          "conversation:development-cafe-01"
+        ],
+        "inputTokens": 213,
+        "memoryTokens": 139,
+        "excluded": []
+      },
+      {
+        "strategy": "budgeted_retrieval",
+        "selectedIds": [
+          "conversation:development-cafe-01"
+        ],
+        "inputTokens": 213,
+        "memoryTokens": 139,
+        "excluded": []
+      }
+    ],
+    "budgetChangedSelection": false,
+    "comparisonScope": "retrieval-only on the same memory snapshot; development smoke, not end-to-end optimization",
+    "fixture": "60 synthetic importance-9 seeds, placeholder unit vectors; no seed vector retrieval",
+    "metering": [
+      {
+        "purpose": "summary",
+        "inputTokens": 150,
+        "outputTokens": 93
+      },
+      {
+        "purpose": "importance",
+        "inputTokens": 213,
+        "outputTokens": 1
+      },
+      {
+        "purpose": "memory_embedding",
+        "inputTokens": 103,
+        "outputTokens": null
+      },
+      {
+        "purpose": "summary",
+        "inputTokens": 151,
+        "outputTokens": 112
+      },
+      {
+        "purpose": "importance",
+        "inputTokens": 231,
+        "outputTokens": 1
+      },
+      {
+        "purpose": "memory_embedding",
+        "inputTokens": 123,
+        "outputTokens": null
+      },
+      {
+        "purpose": "retrieval_embedding",
+        "inputTokens": 12,
+        "outputTokens": null
+      },
+      {
+        "purpose": "memory_query",
+        "inputTokens": 213,
+        "outputTokens": 10
+      },
+      {
+        "purpose": "retrieval_embedding",
+        "inputTokens": 12,
+        "outputTokens": null
+      },
+      {
+        "purpose": "memory_query",
+        "inputTokens": 213,
+        "outputTokens": 10
+      },
+      {
+        "purpose": "retrieval_embedding",
+        "inputTokens": 12,
+        "outputTokens": null
+      },
+      {
+        "purpose": "reflection",
+        "inputTokens": 1241,
+        "outputTokens": 582
+      },
+      {
+        "purpose": "reflection_importance",
+        "inputTokens": 101,
+        "outputTokens": 1
+      },
+      {
+        "purpose": "reflection_embedding",
+        "inputTokens": 13,
+        "outputTokens": null
+      },
+      {
+        "purpose": "reflection_importance",
+        "inputTokens": 108,
+        "outputTokens": 1
+      },
+      {
+        "purpose": "reflection_embedding",
+        "inputTokens": 17,
+        "outputTokens": null
+      },
+      {
+        "purpose": "reflection_importance",
+        "inputTokens": 109,
+        "outputTokens": 1
+      },
+      {
+        "purpose": "reflection_embedding",
+        "inputTokens": 18,
+        "outputTokens": null
+      }
+    ],
+    "pending": [
+      "Convex vector/online parity",
+      "50 questions x 3 and complete quality gates",
+      "Human reviewed holdout",
+      "Tiered memory"
+    ]
+  },
+  "evaluation": {
+    "diagnosticOnly": true,
+    "independentQuestions": 1,
+    "predictions": [
+      {
+        "strategy": "upstream_top_k",
+        "queryId": "development-cafe-opening",
+        "correct": true,
+        "valid": true,
+        "answer": "08:30",
+        "reason": null
+      },
+      {
+        "strategy": "budgeted_retrieval",
+        "queryId": "development-cafe-opening",
+        "correct": true,
+        "valid": true,
+        "answer": "08:30",
+        "reason": null
+      }
+    ],
+    "answersSha256": "980975b7fc3c156d23ff74a1346462561577844157484a426d86ad4acc9f3e54",
+    "humanReviewed": false
+  },
+  "costsByPurpose": {
+    "summary": {
+      "attempts": 2,
+      "inputTokensKnown": 301,
+      "outputTokensKnown": 205,
+      "unknownUsageAttempts": 0
+    },
+    "importance": {
+      "attempts": 2,
+      "inputTokensKnown": 444,
+      "outputTokensKnown": 2,
+      "unknownUsageAttempts": 0
+    },
+    "memory_embedding": {
+      "attempts": 2,
+      "inputTokensKnown": 226,
+      "outputTokensKnown": null,
+      "unknownUsageAttempts": 0,
+      "outputUsageReason": "embedding endpoint has no completion-token usage; input usage measured"
+    },
+    "retrieval_embedding": {
+      "attempts": 3,
+      "inputTokensKnown": 36,
+      "outputTokensKnown": null,
+      "unknownUsageAttempts": 0,
+      "outputUsageReason": "embedding endpoint has no completion-token usage; input usage measured"
+    },
+    "memory_query": {
+      "attempts": 2,
+      "inputTokensKnown": 426,
+      "outputTokensKnown": 20,
+      "unknownUsageAttempts": 0
+    },
+    "reflection": {
+      "attempts": 1,
+      "inputTokensKnown": 1241,
+      "outputTokensKnown": 582,
+      "unknownUsageAttempts": 0
+    },
+    "reflection_importance": {
+      "attempts": 3,
+      "inputTokensKnown": 318,
+      "outputTokensKnown": 3,
+      "unknownUsageAttempts": 0
+    },
+    "reflection_embedding": {
+      "attempts": 3,
+      "inputTokensKnown": 48,
+      "outputTokensKnown": null,
+      "unknownUsageAttempts": 0,
+      "outputUsageReason": "embedding endpoint has no completion-token usage; input usage measured"
+    }
+  },
+  "callsSha256": "a75b0f20f71b41cdd1cf8359035fa67e355e931c317acfdada1adc5d66ef16e1",
+  "interpretation": "Both strategies selected the same 139-token memory and used 213 input tokens for this single development query. No budget reduction observed; no optimization conclusion."
+}

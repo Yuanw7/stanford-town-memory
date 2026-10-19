@@ -1,0 +1,50 @@
+{
+  "mode": "diagnostic_memory_comparison",
+  "host": "http://127.0.0.1:11435",
+  "model": "town-qwen",
+  "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+  "embeddingModel": "mxbai-embed-large",
+  "embeddingDigest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+  "embeddingDimensions": 1024,
+  "contextWindowTokens": 8192,
+  "maxInputTokens": 6500,
+  "maxOutputTokens": 1024,
+  "maxTotalCalls": 180,
+  "wallTimeLimitSeconds": 1800,
+  "temperature": 0,
+  "seed": 42,
+  "dataset": {
+    "path": "experiments/datasets/local/town-development-v2.json",
+    "sha256": "51c63afb4d2d1c33bf733f2790acaa333cec656371aaf5aafd8c370c0fb07ebd"
+  },
+  "adaptations": [
+    "Qwen raw ChatML with exact tokenizer calibration",
+    "UTC ISO time instead of host locale",
+    "Serial calls and bounded output; reflection max 1024 tokens",
+    "Strict reflection source/schema validation",
+    "Independent local JSON transaction store; no Convex writes",
+    "Exact cosine over local scoped vectors instead of Convex vector search",
+    "Explicit logical clock; latest-100 by logical creation and insertion order",
+    "Read-only comparison probes; separate mutable touch probe",
+    "Retrieval-only strategy comparison; synthetic reflection seeds isolated"
+  ],
+  "repetitions": 3,
+  "queryOutputTokens": 128,
+  "variants": [
+    {
+      "id": "baseline",
+      "policy": "upstream_top_k"
+    },
+    {
+      "id": "budget_1024",
+      "policy": "budgeted_retrieval",
+      "memoryBudgetTokens": 1024
+    },
+    {
+      "id": "budget_512",
+      "policy": "budgeted_retrieval",
+      "memoryBudgetTokens": 512
+    }
+  ],
+  "sourceCapture": "artifacts/local/town-conversations/2026-10-15T05-28-08-339Z-26174177"
+}

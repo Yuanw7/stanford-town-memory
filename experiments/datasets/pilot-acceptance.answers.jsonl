@@ -1,0 +1,50 @@
+{"id": "acceptance-fact-01", "acceptedAnswers": ["08:00"], "sourceEventIds": ["acceptance-fact-01-e1"]}
+{"id": "acceptance-fact-02", "acceptedAnswers": ["09:00"], "sourceEventIds": ["acceptance-fact-02-e1"]}
+{"id": "acceptance-fact-03", "acceptedAnswers": ["10:00"], "sourceEventIds": ["acceptance-fact-03-e1"]}
+{"id": "acceptance-fact-04", "acceptedAnswers": ["11:00"], "sourceEventIds": ["acceptance-fact-04-e1"]}
+{"id": "acceptance-fact-05", "acceptedAnswers": ["12:00"], "sourceEventIds": ["acceptance-fact-05-e1"]}
+{"id": "acceptance-fact-06", "acceptedAnswers": ["13:00"], "sourceEventIds": ["acceptance-fact-06-e1"]}
+{"id": "acceptance-fact-07", "acceptedAnswers": ["14:00"], "sourceEventIds": ["acceptance-fact-07-e1"]}
+{"id": "acceptance-fact-08", "acceptedAnswers": ["15:00"], "sourceEventIds": ["acceptance-fact-08-e1"]}
+{"id": "acceptance-fact-09", "acceptedAnswers": ["16:00"], "sourceEventIds": ["acceptance-fact-09-e1"]}
+{"id": "acceptance-fact-10", "acceptedAnswers": ["17:00"], "sourceEventIds": ["acceptance-fact-10-e1"]}
+{"id": "acceptance-update-01", "acceptedAnswers": ["13:30"], "sourceEventIds": ["acceptance-update-01-e1", "acceptance-update-01-e2"]}
+{"id": "acceptance-update-02", "acceptedAnswers": ["14:30"], "sourceEventIds": ["acceptance-update-02-e1", "acceptance-update-02-e2"]}
+{"id": "acceptance-update-03", "acceptedAnswers": ["15:30"], "sourceEventIds": ["acceptance-update-03-e1", "acceptance-update-03-e2"]}
+{"id": "acceptance-update-04", "acceptedAnswers": ["16:30"], "sourceEventIds": ["acceptance-update-04-e1", "acceptance-update-04-e2"]}
+{"id": "acceptance-update-05", "acceptedAnswers": ["17:30"], "sourceEventIds": ["acceptance-update-05-e1", "acceptance-update-05-e2"]}
+{"id": "acceptance-update-06", "acceptedAnswers": ["18:30"], "sourceEventIds": ["acceptance-update-06-e1", "acceptance-update-06-e2"]}
+{"id": "acceptance-update-07", "acceptedAnswers": ["19:30"], "sourceEventIds": ["acceptance-update-07-e1", "acceptance-update-07-e2"]}
+{"id": "acceptance-update-08", "acceptedAnswers": ["20:30"], "sourceEventIds": ["acceptance-update-08-e1", "acceptance-update-08-e2"]}
+{"id": "acceptance-update-09", "acceptedAnswers": ["21:30"], "sourceEventIds": ["acceptance-update-09-e1", "acceptance-update-09-e2"]}
+{"id": "acceptance-update-10", "acceptedAnswers": ["22:30"], "sourceEventIds": ["acceptance-update-10-e1", "acceptance-update-10-e2"]}
+{"id": "acceptance-relationship-01", "acceptedAnswers": ["陈禾"], "sourceEventIds": ["acceptance-relationship-01-e1"]}
+{"id": "acceptance-relationship-02", "acceptedAnswers": ["李悦"], "sourceEventIds": ["acceptance-relationship-02-e1"]}
+{"id": "acceptance-relationship-03", "acceptedAnswers": ["吴悠"], "sourceEventIds": ["acceptance-relationship-03-e1"]}
+{"id": "acceptance-relationship-04", "acceptedAnswers": ["郑安"], "sourceEventIds": ["acceptance-relationship-04-e1"]}
+{"id": "acceptance-relationship-05", "acceptedAnswers": ["王晴"], "sourceEventIds": ["acceptance-relationship-05-e1"]}
+{"id": "acceptance-relationship-06", "acceptedAnswers": ["孙川"], "sourceEventIds": ["acceptance-relationship-06-e1"]}
+{"id": "acceptance-relationship-07", "acceptedAnswers": ["赵露"], "sourceEventIds": ["acceptance-relationship-07-e1"]}
+{"id": "acceptance-relationship-08", "acceptedAnswers": ["林晨"], "sourceEventIds": ["acceptance-relationship-08-e1"]}
+{"id": "acceptance-relationship-09", "acceptedAnswers": ["周宁"], "sourceEventIds": ["acceptance-relationship-09-e1"]}
+{"id": "acceptance-relationship-10", "acceptedAnswers": ["许岚"], "sourceEventIds": ["acceptance-relationship-10-e1"]}
+{"id": "acceptance-commitment-01", "acceptedAnswers": ["2026-11-01"], "sourceEventIds": ["acceptance-commitment-01-e1"]}
+{"id": "acceptance-commitment-02", "acceptedAnswers": ["2026-11-02"], "sourceEventIds": ["acceptance-commitment-02-e1"]}
+{"id": "acceptance-commitment-03", "acceptedAnswers": ["2026-11-03"], "sourceEventIds": ["acceptance-commitment-03-e1"]}
+{"id": "acceptance-commitment-04", "acceptedAnswers": ["2026-11-04"], "sourceEventIds": ["acceptance-commitment-04-e1"]}
+{"id": "acceptance-commitment-05", "acceptedAnswers": ["2026-11-05"], "sourceEventIds": ["acceptance-commitment-05-e1"]}
+{"id": "acceptance-commitment-06", "acceptedAnswers": ["2026-11-06"], "sourceEventIds": ["acceptance-commitment-06-e1"]}
+{"id": "acceptance-commitment-07", "acceptedAnswers": ["2026-11-07"], "sourceEventIds": ["acceptance-commitment-07-e1"]}
+{"id": "acceptance-commitment-08", "acceptedAnswers": ["2026-11-08"], "sourceEventIds": ["acceptance-commitment-08-e1"]}
+{"id": "acceptance-commitment-09", "acceptedAnswers": ["2026-11-09"], "sourceEventIds": ["acceptance-commitment-09-e1"]}
+{"id": "acceptance-commitment-10", "acceptedAnswers": ["2026-11-10"], "sourceEventIds": ["acceptance-commitment-10-e1"]}
+{"id": "acceptance-unanswerable-01", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-01-e1"]}
+{"id": "acceptance-unanswerable-02", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-02-e1"]}
+{"id": "acceptance-unanswerable-03", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-03-e1"]}
+{"id": "acceptance-unanswerable-04", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-04-e1"]}
+{"id": "acceptance-unanswerable-05", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-05-e1"]}
+{"id": "acceptance-unanswerable-06", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-06-e1"]}
+{"id": "acceptance-unanswerable-07", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-07-e1"]}
+{"id": "acceptance-unanswerable-08", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-08-e1"]}
+{"id": "acceptance-unanswerable-09", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-09-e1"]}
+{"id": "acceptance-unanswerable-10", "acceptedAnswers": ["未知"], "sourceEventIds": ["acceptance-unanswerable-10-e1"]}

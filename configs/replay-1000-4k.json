@@ -1,0 +1,21 @@
+{
+  "mode": "diagnostic_replay",
+  "policy": "full_history_control",
+  "model": "town-qwen",
+  "modelDigest": "bcf938b213fb0d4ec97b2e68d42c93445dc05ab9a6328405f0a0952cc0596950",
+  "host": "http://127.0.0.1:11435",
+  "contextWindowTokens": 4096,
+  "maxInputTokens": 3072,
+  "maxOutputTokens": 128,
+  "repetitions": 3,
+  "maxTotalCalls": 200,
+  "wallTimeLimitSeconds": 1800,
+  "dataset": {
+    "path": "experiments/datasets/workload-1000.jsonl",
+    "sha256": "f25146cba6ae71fcf2a54abda87313ebbca97deb11f67b904e742616c74bd188"
+  },
+  "initialState": {
+    "path": "experiments/datasets/empty-state.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}

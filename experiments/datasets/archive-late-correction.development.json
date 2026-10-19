@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "kind": "memory_development",
+  "conversations": [
+    {
+      "schemaVersion": 2,
+      "type": "conversation",
+      "id": "late-old",
+      "worldId": "late-correction-development-v1",
+      "createdAtMs": 1793520000000,
+      "participants": [
+        {
+          "agentId": "rowan",
+          "name": "Rowan"
+        },
+        {
+          "agentId": "iris",
+          "name": "Iris"
+        }
+      ],
+      "observedBy": [
+        "rowan",
+        "iris"
+      ],
+      "messages": [
+        {
+          "id": "late-old-m1",
+          "authorAgentId": "rowan",
+          "text": "Today, November 1, 2026, we believe Maple Library opens at 09:00.",
+          "atMs": 1793520000001
+        },
+        {
+          "id": "late-old-m2",
+          "authorAgentId": "iris",
+          "text": "I confirm that our current information says 09:00 for November 1.",
+          "atMs": 1793520000002
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
+      "type": "conversation",
+      "id": "late-correction",
+      "worldId": "late-correction-development-v1",
+      "createdAtMs": 1793606400000,
+      "participants": [
+        {
+          "agentId": "rowan",
+          "name": "Rowan"
+        },
+        {
+          "agentId": "iris",
+          "name": "Iris"
+        }
+      ],
+      "observedBy": [
+        "rowan",
+        "iris"
+      ],
+      "messages": [
+        {
+          "id": "late-correction-m1",
+          "authorAgentId": "rowan",
+          "text": "Correction received today, November 2, 2026: our November 1 statement was wrong. Maple Library actually opened at 08:00 on November 1, 2026, not 09:00. Today, November 2, 2026, it opens at 10:00.",
+          "atMs": 1793606400001
+        },
+        {
+          "id": "late-correction-m2",
+          "authorAgentId": "iris",
+          "text": "Understood. We must correct the past opening time to 08:00 for November 1, 2026. The current opening time on November 2, 2026 is 10:00.",
+          "atMs": 1793606400002
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "id": "late-history",
+      "category": "update",
+      "text": "According to all information I know now, what was Maple Library's actual opening time on November 1, 2026? Answer HH:MM only.",
+      "worldId": "late-correction-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000000
+    },
+    {
+      "id": "late-current",
+      "category": "update",
+      "text": "What is Maple Library's current opening time on November 2, 2026? Answer HH:MM only.",
+      "worldId": "late-correction-development-v1",
+      "agentId": "rowan",
+      "atMs": 1793610000001
+    }
+  ]
+}

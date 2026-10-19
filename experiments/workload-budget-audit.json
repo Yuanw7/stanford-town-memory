@@ -1,0 +1,21 @@
+{
+  "method": "official_tokenizer_static_no_inference",
+  "report": [
+    {
+      "historyEvents": 100,
+      "queries": 50,
+      "minInputTokens": 801,
+      "maxInputTokens": 818,
+      "queriesExceeding4kInput3072": 0,
+      "queriesExceeding8kInput6500": 0
+    },
+    {
+      "historyEvents": 1000,
+      "queries": 50,
+      "minInputTokens": 6009,
+      "maxInputTokens": 6026,
+      "queriesExceeding4kInput3072": 50,
+      "queriesExceeding8kInput6500": 0
+    }
+  ]
+}

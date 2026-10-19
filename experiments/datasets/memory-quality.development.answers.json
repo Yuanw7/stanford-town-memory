@@ -1,0 +1,118 @@
+[
+  {
+    "id": "quality-fact-1",
+    "acceptedAnswers": [
+      "blue"
+    ],
+    "sourceEventIds": [
+      "quality-promise-m1",
+      "quality-promise-m2"
+    ],
+    "contradictionAnswers": [
+      "red"
+    ]
+  },
+  {
+    "id": "quality-fact-2",
+    "acceptedAnswers": [
+      "no"
+    ],
+    "sourceEventIds": [
+      "quality-promise-m1",
+      "quality-promise-m2"
+    ],
+    "contradictionAnswers": [
+      "yes"
+    ]
+  },
+  {
+    "id": "quality-update-1",
+    "acceptedAnswers": [
+      "10:00"
+    ],
+    "sourceEventIds": [
+      "quality-update-m1",
+      "quality-update-m2"
+    ],
+    "contradictionAnswers": [
+      "09:00",
+      "9:00"
+    ]
+  },
+  {
+    "id": "quality-history-1",
+    "acceptedAnswers": [
+      "09:00",
+      "9:00"
+    ],
+    "sourceEventIds": [
+      "quality-old-m1",
+      "quality-update-m1",
+      "quality-update-m2"
+    ],
+    "contradictionAnswers": [
+      "10:00"
+    ]
+  },
+  {
+    "id": "quality-relationship-1",
+    "acceptedAnswers": [
+      "Iris"
+    ],
+    "sourceEventIds": [
+      "quality-old-m1",
+      "quality-old-m2"
+    ]
+  },
+  {
+    "id": "quality-relationship-2",
+    "acceptedAnswers": [
+      "no"
+    ],
+    "sourceEventIds": [
+      "quality-old-m1",
+      "quality-old-m2"
+    ],
+    "contradictionAnswers": [
+      "yes"
+    ]
+  },
+  {
+    "id": "quality-commitment-1",
+    "acceptedAnswers": [
+      "10:00"
+    ],
+    "sourceEventIds": [
+      "quality-promise-m1",
+      "quality-promise-m2"
+    ],
+    "contradictionAnswers": [
+      "09:00",
+      "9:00"
+    ]
+  },
+  {
+    "id": "quality-commitment-2",
+    "acceptedAnswers": [
+      "Iris"
+    ],
+    "sourceEventIds": [
+      "quality-promise-m1",
+      "quality-promise-m2"
+    ]
+  },
+  {
+    "id": "quality-unknown-1",
+    "acceptedAnswers": [
+      "未知"
+    ],
+    "sourceEventIds": []
+  },
+  {
+    "id": "quality-unknown-2",
+    "acceptedAnswers": [
+      "未知"
+    ],
+    "sourceEventIds": []
+  }
+]

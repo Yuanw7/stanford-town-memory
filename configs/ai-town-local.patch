@@ -1,0 +1,26 @@
+diff --git a/docker-compose.yml b/docker-compose.yml
+index a4cbb64..393ad6a 100644
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -13,11 +13,10 @@ services:
+     networks:
+       - ai-town-network
+   backend:
+-    image: ghcr.io/get-convex/convex-backend:latest
++    image: ghcr.io/get-convex/convex-backend@sha256:d715e9ec088784407ca4ba2d3db592702cd328d02c76cdca3852c0018f2a76b4
+     ports:
+       - '${PORT:-3210}:3210'
+       - '${SITE_PROXY_PORT:-3211}:3211'
+-      - '${OLLAMA_PORT:-11434}:11434'
+     volumes:
+       - data:/convex/data
+     environment:
+@@ -36,7 +35,7 @@ services:
+       - ai-town-network
+ 
+   dashboard:
+-    image: ghcr.io/get-convex/convex-dashboard:latest
++    image: ghcr.io/get-convex/convex-dashboard@sha256:f85cf0d0448b9c835ae3df5c7c1c6f0145dd4c8f0f92eb0245daf304efdd9f1a
+     ports:
+       - '${DASHBOARD_PORT:-6791}:6791'
+     environment:

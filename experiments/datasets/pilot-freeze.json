@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-14",
+  "reviewStatus": "pending_independent_human_review",
+  "files": {
+    "pilot-acceptance.answers.jsonl": "81540bae8842c7fcf60f7a5411aedb86fcb68b78a585abe3d3554cab7f9d2b04",
+    "pilot-acceptance.jsonl": "1672a7ec33ff1192bf4dc4eb4c3ee5fa6566a6cb7cd692a243cf2399b3e62044",
+    "pilot-development.answers.jsonl": "d7a7095eea470bbb1ffb32aa88d447f8036e69dbd9cb31a45d336f2b681c03fe",
+    "pilot-development.jsonl": "c291d5b6708812f41423999ffadc2198025ac817b17aa5e544a76e966935d5a0"
+  }
+}

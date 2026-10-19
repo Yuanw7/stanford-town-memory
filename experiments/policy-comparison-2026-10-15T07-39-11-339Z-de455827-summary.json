@@ -1,0 +1,945 @@
+{
+  "measuredAt": "2026-10-16T14:41:14.022Z",
+  "run": "artifacts/local/policy-comparison/2026-10-15T07-39-11-339Z-de455827",
+  "diagnosticOnly": true,
+  "status": "completed",
+  "distinctQuestions": 10,
+  "summary": {
+    "diagnosticOnly": true,
+    "comparisonScope": "Independent maintenance per policy; read-only offline QA and single-step synthetic actions",
+    "expectedAnswers": 30,
+    "observedAnswers": 30,
+    "distinctQuestions": 10,
+    "attempts": 124,
+    "allGatewayScopeAndUsageMatched": true,
+    "actions": {
+      "baseline": {
+        "due": 1,
+        "completed": 1,
+        "completionRate": 1
+      },
+      "dated_verbose": {
+        "due": 1,
+        "completed": 1,
+        "completionRate": 1
+      },
+      "dated_reference": {
+        "due": 1,
+        "completed": 1,
+        "completionRate": 1
+      }
+    },
+    "pending": [
+      "Human reviewed holdout and full matrix",
+      "Convex/online parity",
+      "Extraction semantic entailment and general entity resolution"
+    ]
+  },
+  "evaluation": {
+    "diagnosticOnly": true,
+    "runCompleted": true,
+    "distinctQuestions": 10,
+    "repetitions": 1,
+    "byVariant": {
+      "baseline": {
+        "expected": 10,
+        "observed": 10,
+        "correct": 9,
+        "accuracy": 0.9,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 6,
+          "assessed": 6,
+          "confirmed": 1,
+          "unassessed": 0,
+          "rateAmongAssessed": 0.16666666666666666,
+          "lowerBoundRate": 0.16666666666666666
+        },
+        "unanswerable": {
+          "expected": 2,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "fact": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "update": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "missing": 0
+          },
+          "relationship": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "commitment": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          }
+        ]
+      },
+      "dated_verbose": {
+        "expected": 10,
+        "observed": 10,
+        "correct": 9,
+        "accuracy": 0.9,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 6,
+          "assessed": 6,
+          "confirmed": 1,
+          "unassessed": 0,
+          "rateAmongAssessed": 0.16666666666666666,
+          "lowerBoundRate": 0.16666666666666666
+        },
+        "unanswerable": {
+          "expected": 2,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "fact": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "update": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "missing": 0
+          },
+          "relationship": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "commitment": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 10,
+            "observed": 10,
+            "correct": 9,
+            "accuracy": 0.9,
+            "missing": 0
+          }
+        ]
+      },
+      "dated_reference": {
+        "expected": 10,
+        "observed": 10,
+        "correct": 10,
+        "accuracy": 1,
+        "missing": 0,
+        "contradictions": {
+          "expectedAnnotated": 6,
+          "assessed": 6,
+          "confirmed": 0,
+          "unassessed": 0,
+          "rateAmongAssessed": 0,
+          "lowerBoundRate": 0
+        },
+        "unanswerable": {
+          "expected": 2,
+          "unsupportedValidAnswers": 0
+        },
+        "byCategory": {
+          "fact": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "update": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "relationship": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "commitment": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          },
+          "unanswerable": {
+            "expected": 2,
+            "observed": 2,
+            "correct": 2,
+            "accuracy": 1,
+            "missing": 0
+          }
+        },
+        "byRepetition": [
+          {
+            "repetition": 1,
+            "expected": 10,
+            "observed": 10,
+            "correct": 10,
+            "accuracy": 1,
+            "missing": 0
+          }
+        ]
+      }
+    },
+    "rows": [
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "baseline",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": false,
+        "valid": true,
+        "answer": "09:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": true
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "09:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_verbose",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-fact-1",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "blue",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-fact-2",
+        "category": "fact",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-update-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-history-1",
+        "category": "update",
+        "correct": true,
+        "valid": true,
+        "answer": "09:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-relationship-1",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "Iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-relationship-2",
+        "category": "relationship",
+        "correct": true,
+        "valid": true,
+        "answer": "no",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-commitment-1",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "10:00",
+        "reason": null,
+        "contradictionAnnotated": true,
+        "contradiction": false
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-commitment-2",
+        "category": "commitment",
+        "correct": true,
+        "valid": true,
+        "answer": "iris",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-unknown-1",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      },
+      {
+        "repetition": 1,
+        "strategy": "dated_reference",
+        "queryId": "quality-unknown-2",
+        "category": "unanswerable",
+        "correct": true,
+        "valid": true,
+        "answer": "未知",
+        "reason": null,
+        "contradictionAnnotated": false,
+        "contradiction": null
+      }
+    ],
+    "complete": true,
+    "formalQualityAccepted": false,
+    "limitation": "Development QA; contradictions only for predeclared exact counteranswers, with coverage. No human review or actual task-completion gate.",
+    "answersSha256": "301ebb75bfbfa06e67049e05c6f05db6e1fb4448eb262fdf132828c8936ce006"
+  },
+  "ablations": [
+    {
+      "control": "dated_verbose",
+      "treatment": "dated_reference",
+      "factor": "extractionFormat",
+      "maintenanceClaimsEquivalent": false,
+      "totalGenerationTokenChangeRate": -0.11058936272161002,
+      "accuracyChangePoints": 9.999999999999998,
+      "controlActions": {
+        "due": 1,
+        "completed": 1,
+        "completionRate": 1
+      },
+      "treatmentActions": {
+        "due": 1,
+        "completed": 1,
+        "completionRate": 1
+      },
+      "formalQualityAccepted": false,
+      "limitation": "Development ablation only; no holdout or statistical acceptance"
+    }
+  ],
+  "sharedMaintenance": {
+    "attempts": 0,
+    "failures": 0,
+    "unknownUsageAttempts": 0,
+    "clientRequestElapsedMs": 0,
+    "generation": {
+      "attempts": 0,
+      "inputTokens": 0,
+      "outputTokens": 0
+    },
+    "embedding": {
+      "attempts": 0,
+      "inputTokens": 0,
+      "outputTokens": null,
+      "outputUsageReason": "no embedding completion-token field"
+    }
+  },
+  "queryCostsByVariant": {
+    "baseline": {
+      "attempts": 21,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 3244.1549170000035,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 4458,
+        "outputTokens": 74
+      },
+      "embedding": {
+        "attempts": 11,
+        "inputTokens": 180,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_verbose": {
+      "attempts": 21,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 3294.058334000045,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 4142,
+        "outputTokens": 73
+      },
+      "embedding": {
+        "attempts": 11,
+        "inputTokens": 180,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_reference": {
+      "attempts": 21,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 11299.503334000052,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 3689,
+        "outputTokens": 73
+      },
+      "embedding": {
+        "attempts": 11,
+        "inputTokens": 180,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "answerCostsByVariant": {
+    "baseline": {
+      "attempts": 10,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 2983.0868759999976,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 4458,
+        "outputTokens": 74
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_verbose": {
+      "attempts": 10,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 3040.9049590000213,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 4142,
+        "outputTokens": 73
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_reference": {
+      "attempts": 10,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 11071.441875000033,
+      "generation": {
+        "attempts": 10,
+        "inputTokens": 3689,
+        "outputTokens": 73
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "allOwnedCostsByVariant": {
+    "baseline": {
+      "attempts": 40,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 29055.994542000008,
+      "generation": {
+        "attempts": 23,
+        "inputTokens": 7110,
+        "outputTokens": 618
+      },
+      "embedding": {
+        "attempts": 17,
+        "inputTokens": 792,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_verbose": {
+      "attempts": 44,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 67215.52654300003,
+      "generation": {
+        "attempts": 17,
+        "inputTokens": 8749,
+        "outputTokens": 1686
+      },
+      "embedding": {
+        "attempts": 27,
+        "inputTokens": 1430,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_reference": {
+      "attempts": 40,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 37329.69500000008,
+      "generation": {
+        "attempts": 19,
+        "inputTokens": 8643,
+        "outputTokens": 638
+      },
+      "embedding": {
+        "attempts": 21,
+        "inputTokens": 944,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "persistedPolicySnapshotBytes": {
+    "baseline": 165015,
+    "dated_verbose": 437092,
+    "dated_reference": 276434
+  },
+  "actionCostsByVariant": {
+    "baseline": {
+      "attempts": 1,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 1640.6171250000007,
+      "generation": {
+        "attempts": 1,
+        "inputTokens": 541,
+        "outputTokens": 17
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_verbose": {
+      "attempts": 1,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 1094.7880000000005,
+      "generation": {
+        "attempts": 1,
+        "inputTokens": 307,
+        "outputTokens": 17
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_reference": {
+      "attempts": 1,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 1183.5315000000119,
+      "generation": {
+        "attempts": 1,
+        "inputTokens": 310,
+        "outputTokens": 17
+      },
+      "embedding": {
+        "attempts": 0,
+        "inputTokens": 0,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "maintenanceCostsByVariant": {
+    "baseline": {
+      "attempts": 18,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 24171.222500000003,
+      "generation": {
+        "attempts": 12,
+        "inputTokens": 2111,
+        "outputTokens": 527
+      },
+      "embedding": {
+        "attempts": 6,
+        "inputTokens": 612,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_verbose": {
+      "attempts": 22,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 62826.680208999984,
+      "generation": {
+        "attempts": 6,
+        "inputTokens": 4300,
+        "outputTokens": 1596
+      },
+      "embedding": {
+        "attempts": 16,
+        "inputTokens": 1250,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    },
+    "dated_reference": {
+      "attempts": 18,
+      "failures": 0,
+      "unknownUsageAttempts": 0,
+      "clientRequestElapsedMs": 24846.660166000016,
+      "generation": {
+        "attempts": 8,
+        "inputTokens": 4644,
+        "outputTokens": 548
+      },
+      "embedding": {
+        "attempts": 10,
+        "inputTokens": 764,
+        "outputTokens": null,
+        "outputUsageReason": "no embedding completion-token field"
+      }
+    }
+  },
+  "queryInputReductionRate": {
+    "baseline": 0,
+    "dated_verbose": 0.07088380439659037,
+    "dated_reference": 0.17249887842081646
+  },
+  "totalOwnedGenerationTokenChangeRate": {
+    "baseline": 0,
+    "dated_verbose": 0.35028467908902683,
+    "dated_reference": 0.20095755693581774
+  },
+  "callsSha256": "ba5df975855f6f3422cfe19b21830465167bdf19c1a845001153ca542b764007",
+  "evaluationSha256": "b3742c4638322c3d2219a765975e86a57a60cd8c81699f09da458a62a5b90169",
+  "analysisScriptSha256": "ede6c5728a776e47505127ac61e704b367c7cd5d6aaaacc72f8b39784dfe4147",
+  "analysisDependencySha256": {
+    "lib/policy-ablation.js": "d8c232a589d9620ec390d24736bc1de58fb58b8865037bf43260d47f419e364f",
+    "lib/conversations-v2.js": "e1be969dc14a955c05c570b52d46136b76ecc2cbe3b11bbe5fdf06ced41b2d89"
+  },
+  "limitations": [
+    "Independent per-policy maintenance; read-only offline QA plus optional single-step simulation, not online interaction",
+    "Distinct question IDs share a history; not independent statistical samples",
+    "Request elapsed time sums client calls, including service wait/load; snapshot bytes are JSON artifacts, not database or power measurements",
+    "queryCosts include action-probe retrieval/planning; actionCosts count commitment_action generation only; allOwnedCosts count both exactly once",
+    "Synthetic development dataset; see config diagnostic notes",
+    "No human review, full quality gates, or Convex parity",
+    "Minimal tiered prototype; no general archive fallback or semantic entailment guarantee"
+  ]
+}

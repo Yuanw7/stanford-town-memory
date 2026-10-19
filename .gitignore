@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+!.env.example
+.idea/
+coverage/
+*.log
+experiments/runs/
+experiments/datasets/local/
+models/cache/
+
+/ai-town/
+artifacts/local/

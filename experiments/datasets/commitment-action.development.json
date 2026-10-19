@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "worldId": "quality-development-v1",
+  "agentId": "rowan",
+  "contacts": [
+    {
+      "id": "rowan",
+      "name": "Rowan"
+    },
+    {
+      "id": "iris",
+      "name": "Iris"
+    },
+    {
+      "id": "pete",
+      "name": "Pete"
+    }
+  ],
+  "inventory": [
+    "blue_notebook",
+    "red_diary"
+  ],
+  "acceptedTasks": [
+    {
+      "id": "accepted-01",
+      "itemId": "blue_notebook",
+      "recipientId": "iris",
+      "acceptedAtMs": 1793608202000,
+      "dueAtMs": 1793613600000,
+      "sourceEventIds": [
+        "quality-promise-m2"
+      ]
+    }
+  ],
+  "actionAtMs": 1793613300000,
+  "evaluateAtMs": 1793613660000
+}

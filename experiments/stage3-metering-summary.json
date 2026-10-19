@@ -1,0 +1,23 @@
+{
+  "measuredAt": "2026-10-14T14:09:26.184Z",
+  "diagnosticOnly": true,
+  "replayRun": "/Users/kafufu/斯坦福小镇/artifacts/local/replay/2026-10-14T09-21-00-540Z-d298452b",
+  "replayRunId": "2026-10-14T09-21-00-540Z-d298452b",
+  "replayAttempts": 150,
+  "gatewayMatchedAttempts": 150,
+  "exactUsageAndScopeMatched": true,
+  "meteringReplayGatePassed": true,
+  "callsSha256": "71cb24d7769dcfba2fcc12e4af9b8144b73d866e4f1b205bb6f9fb59a03fb427",
+  "onlineObservedPurposes": [
+    "conversation",
+    "summary",
+    "importance",
+    "memory_embedding",
+    "retrieval_embedding"
+  ],
+  "pending": [
+    "反思路径尚未在真实小镇达到阈值；已传递作用域，仍需独立触发验证",
+    "正式实验仍需固定版本信息和题集人工审核",
+    "P4 memory 策略尚未实现"
+  ]
+}
